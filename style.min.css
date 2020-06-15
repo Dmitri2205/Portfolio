@@ -66,7 +66,7 @@ header p{font-size:12px}
 .react .react__items{display:block}
 .react .react__items .react__item{width:90%;margin:20px auto}
 .react .react__items .parkon ul{-ms-flex-wrap:wrap;flex-wrap:wrap}
-.react .react__items .parkon:hover{width:80%;margin:0 7%}
+.react .react__items .parkon:hover{width:80%;margin:0 2%}
 }
 @media screen and (max-width:320px){
 body{font-size:12px}
