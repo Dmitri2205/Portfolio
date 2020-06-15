@@ -64,6 +64,6 @@ header p{font-size:12px}
 .react{display:block;height:auto}
 .react .react__items{display:block}
 .react .react__items .react__item{width:90%;margin:20px auto}
-.react .react__items .parkon ul{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.react .react__items .parkon ul{-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0}
 .react .react__items .parkon:hover{width:80%;margin:0 7%}
 }
