@@ -1,10 +1,35 @@
 body{margin:0;padding:0;background-color:#000;font-family:Montserat,sans-serif}
-header{display:block;width:100%;height:100px;line-height:100px;text-align:center;color:#fff;font-weight:100;background:linear-gradient(244deg,#00d5e2 0,#a72fe8 52%,#0005de 100%)}
-header p{margin:0;font-size:18px}
-.about{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%;margin:0;opacity:1;border-bottom-left-radius:5px;border-top-left-radius:0;border-bottom-right-radius:5px;border-top-right-radius:0;color:#000;padding:0 5px 5px 5px;position:relative;background:linear-gradient(244deg,#00d5e2 0,#a72fe8 52%,#0005de 100%);-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-animation:about .8s ease-in;animation:about .8s ease-in;-webkit-animation-iteration-count:1;animation-iteration-count:1}
-.about .about__text{display:block;width:90%;padding:0 5%;position:relative;background-color:#fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px}
-.about img{width:150px;height:150px;border-radius:50%;margin:10px;float:left;shape-outside:circle(50%);-webkit-clip-path:circle(50%);clip-path:circle(50%)}
-.about a{text-decoration:none;color:grey}
+header{display:block;width:100%;height:100px;line-height:100px;text-align:center;color:#fff;font-weight:100}
+header p{margin:0;font-size:25px;font-weight:700}
+.about{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:100%;margin:0;opacity:1;color:#000;border-bottom-left-radius:5px;border-top-left-radius:0;border-bottom-right-radius:5px;border-top-right-radius:0;padding:0 5px 5px 5px;position:relative;background:url(img/about.jpg) center no-repeat;background-size:cover;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-animation:about .8s ease-in;animation:about .8s ease-in;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-transition:1s;transition:1s}
+.about .myPhoto{width:150px;height:150px;border-radius:50%;margin:10px 10px 10px -50px;float:left;shape-outside:circle(50%);-webkit-clip-path:circle(50%);clip-path:circle(50%)}
+.about .about__text{display:block;width:90%;padding:0 5%;position:relative;border-bottom-left-radius:10px;border-bottom-right-radius:10px;color:#1d7d96;font-weight:700;text-shadow:-.5px -.5px 0 #fff}
+.about .about__text h3{color:#fff;text-shadow:-.5px -.5px 0 #1d7d96}
+.about .about__text .myTechs__heading{position:relative;width:7%;padding-top:10px}
+.about .about__text .myTechs__heading h3{color:#fff;margin:0 10px 0 0}
+.about .about__text .myTechs__heading .heading__wraper{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.about .about__text .myTechs__heading .heading__wraper .myTechs__heading-arrow{display:inline-block;-webkit-transition:1s;transition:1s;width:30px;height:30px;margin:-5px 0 0 0;float:none;-webkit-clip-path:none;clip-path:none}
+.about .about__text .myTechs__heading .myTechs{display:none;list-style:none;padding:20px 0;position:absolute;top:20px;left:0;color:#000;-webkit-animation:myTech 1s ease;animation:myTech 1s ease;-webkit-transition:1s;transition:1s;border-radius:10px}
+@-webkit-keyframes myTech{
+from{display:none}
+to{display:-webkit-inline-box;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;flex-wrap:wrap;background-color:#d0d0d0}
+}
+@keyframes myTech{
+from{display:none}
+to{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:#d0d0d0}
+}
+.about .about__text .myTechs__heading .myTechs li{padding:5px;margin:1px;border:1px solid #000;border-radius:5px;-webkit-animation:li_animation .8s ease;animation:li_animation .8s ease;opacity:1;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:.8s;transition:.8s}
+@-webkit-keyframes li_animation{
+0%{-webkit-transform:scale(.1);transform:scale(.1);opacity:0}
+100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);border:1px solid #000;-webkit-box-sizing:border-box;box-sizing:border-box}
+}
+@keyframes li_animation{
+0%{-webkit-transform:scale(.1);transform:scale(.1);opacity:0}
+100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);border:1px solid #000;-webkit-box-sizing:border-box;box-sizing:border-box}
+}
+.about .about__text .myTechs__heading:hover .myTechs{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:1s;transition:1s;width:1430%;background-color:#d0d0d0}
+.about .about__text .myTechs__heading:hover img{-webkit-transition:.5s;transition:.5s;-webkit-transform:rotateZ(90deg);transform:rotateZ(90deg)}
+.about .about__text a{text-decoration:none;color:#fff}
 @-webkit-keyframes about{
 from{opacity:0}
 90%{opacity:.8}
@@ -15,11 +40,26 @@ from{opacity:0}
 90%{opacity:.8}
 to{opacity:1}
 }
+.about .skills{display:block;width:23%;line-height:30px}
+.about .skills h3{margin:0;float:left}
+.about .skills .skills__arrow{width:30px;height:30px;-webkit-transition:.8s;transition:.8s}
+.about .skills .myText{display:none;height:100%;color:#1d7d96;font-weight:700;text-shadow:-.5px -.5px 0 #fff;-webkit-transition:1s;transition:1s}
+.about .skills .myText p{-webkit-animation:myText 1s ease-in;animation:myText 1s ease-in}
+@-webkit-keyframes myText{
+from{display:none;translate:scale(0)}
+to{display:inline-block;translate:scale(1.5)}
+}
+@keyframes myText{
+from{display:none;translate:scale(0)}
+to{display:inline-block;translate:scale(1.5)}
+}
+.about .skills:hover .skills__arrow{-webkit-transform:rotateZ(90deg);transform:rotateZ(90deg)}
+.about .skills:hover .myText{display:block;width:450%;height:100%}
 section{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;height:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;text-align:center;border-top-left-radius:5px;border-top-right-radius:5px}
 .main{background-color:#fff}
 .html{display:block;text-align:center;width:95%;height:50%;padding:0 2.5%}
 .html .html__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;height:100%}
-.react{display:block;text-align:center;width:95%;height:450px;padding:20px 2.5%;background:url('https://miro.medium.com/max/2400/1*rpHtt5VicGT3T-mVJJ2jFw.gif') center no-repeat;background-size:cover;padding-top:50px;margin-top:50px;position:relative}
+.react{display:block;text-align:center;width:95%;height:450px;padding:20px 2.5%;background:url('https://miro.medium.com/max/2400/1*rpHtt5VicGT3T-mVJJ2jFw.gif') center no-repeat;background-size:80%;background-color:#22252c;padding-top:50px;margin-top:50px;position:relative}
 .react .react__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:90%;padding:0 5%}
 .react .react__items .react__item{display:block;width:30%;height:50%;-webkit-transition:1s;transition:1s;border:3px solid #e4e4e4;border-radius:10px;background-color:#fff;margin:10px}
 .react .react__items .react__item:hover .react__item-desc{display:block;width:100%;height:auto}
@@ -33,12 +73,29 @@ section{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;height:1
 .react .react__items .react__item:hover .react{height:500px}
 .react .react__items .react__item:hover h6,.react .react__items .react__item:hover p{-webkit-transition:1s;transition:1s;display:inline-block;opacity:1}
 .react .react__items .react__item:hover ul{display:inline-block;opacity:1}
-.react .react__items .parkon{font-family:Roboto,sans-serif;background:linear-gradient(244deg,#2fe89a,#2b3569);font-size:12px;font-weight:100}
-.react .react__items .parkon .parkon__description{display:none;color:#fff}
-.react .react__items .parkon .parkon__description ul{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.react .react__items .parkon{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-family:Roboto,sans-serif;background:linear-gradient(244deg,#2fe89a,#2b3569);font-size:12px;font-weight:100}
+.react .react__items .parkon p{margin:0;float:left}
+.react .react__items .parkon .parkon__heading{display:block;width:100%;float:right;-webkit-animation:parkonHeading 1s ease;animation:parkonHeading 1s ease;-webkit-transition:1s;transition:1s}
+@-webkit-keyframes parkonHeading{
+from{display:none;opacity:0}
+to{display:block;opacity:1}
+}
+@keyframes parkonHeading{
+from{display:none;opacity:0}
+to{display:block;opacity:1}
+}
+.react .react__items .parkon .parkon__heading .about__app{width:47%;padding:0 5px}
+.react .react__items .parkon .parkon__heading a{width:49%}
+.react .react__items .parkon .parkon__heading h6{font-size:12px;float:left;width:47%}
+.react .react__items .parkon .parkon__description{display:none;color:#fff;opacity:0}
+.react .react__items .parkon .parkon__description ul{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .react .react__items .parkon .parkon__description ul li{width:100%;border:1px solid #fff;font-size:10px}
-.react .react__items .parkon:hover{-webkit-transition:0s;transition:0s;position:absolute;width:80%;height:auto;top:70px}
-.react .react__items .parkon:hover .parkon__description{display:block;opacity:1;-webkit-transition:0s;transition:0s;background-color:linear-gradient(244deg,#2fe89a,#2b3569) center no-repeat}
+.react .react__items .parkon .parkon__description .ParkOn__techs{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-wrap:wrap;flex-wrap:wrap;float:none}
+.react .react__items .parkon .parkon__description .ParkOn__techs li{border-radius:5px;-webkit-box-sizing:border-box;box-sizing:border-box;width:20%;padding:2px}
+.react .react__items .parkon:hover{width:50%;-webkit-transition:1s;transition:1s;height:auto;top:70px}
+.react .react__items .parkon:hover img{margin-top:2%;float:right;width:50%}
+.react .react__items .parkon:hover .parkon__description{display:block;opacity:1;-webkit-transition:1s;transition:1s;background-color:linear-gradient(244deg,#2fe89a,#2b3569) center no-repeat}
+.react .react__items .parkon:hover .parkon__description h6{float:left}
 .react .react__items .parkon:hover .parkon__description ul{width:100%}
 .item{display:block;width:30%;height:50%;border:3px solid #e4e4e4;border-radius:10px;background-color:#fff;margin:10px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:1s;transition:1s}
 .item:hover{top:0;left:0;z-index:9999;-webkit-transition:1s;transition:1s;-webkit-transform:scale(1.1);transform:scale(1.1)}
@@ -50,14 +107,14 @@ section{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;height:1
 .item p{display:none;opacity:0}
 .used__technologies{display:none;opacity:0;width:100%;height:0;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-transition:1s;transition:1s}
 .used__technologies img{width:40px;height:40px}
-footer{display:block;width:100%;height:100%;text-align:center;color:#fff;background-color:#000}
+footer{display:block;width:100%;height:100%;text-align:center;color:#fff;background-color:#262626}
 footer p{margin:0;padding-top:20px}
 footer ul{list-style:none}
 footer ul li{margin:10px;padding:0 20px}
-footer a{-webkit-transition:.3s;transition:.3s;text-decoration:none;color:#b912ff;width:25%}
-footer a:hover{-webkit-transition:.3s;transition:.3s;border-bottom:4px solid #b912ff;-webkit-box-sizing:border-box;box-sizing:border-box}
+footer a{-webkit-transition:.3s;transition:.3s;text-decoration:none;color:#fff;width:25%}
+footer a:hover{-webkit-transition:.3s;transition:.3s;border-bottom:4px solid #fff;-webkit-box-sizing:border-box;box-sizing:border-box}
 @media screen and (max-width:1100px){
-header p{font-size:12px}
+header p{font-size:16px;font-weight:700}
 .about{display:block;margin-top:-20px}
 .about p{font-size:12px;margin:0}
 .html{font-size:12px}
@@ -66,8 +123,10 @@ header p{font-size:12px}
 .react{display:block;height:auto}
 .react .react__items{display:block}
 .react .react__items .react__item{width:90%;margin:20px auto}
-.react .react__items .parkon ul{-ms-flex-wrap:wrap;flex-wrap:wrap}
-.react .react__items .parkon:hover{width:80%;margin:0 2%}
+.react .react__items .parkon .ParkOn__techs{display:inline-block}
+.react .react__items .parkon .ParkOn__techs li{border-radius:5px;-webkit-box-sizing:border-box;box-sizing:border-box;width:25%;padding:2px}
+.react .react__items .parkon:hover{margin:0 auto;width:90%}
+.react .react__items .parkon:hover .about__app,.react .react__items .parkon:hover .parkon__heading img,.react .react__items .parkon:hover h6{width:95%;margin:0 auto;float:none}
 }
 @media screen and (max-width:320px){
 body{font-size:12px}
