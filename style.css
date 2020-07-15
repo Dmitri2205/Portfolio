@@ -27,6 +27,9 @@ header {
     font-weight: bold;
     color: white;
     font-size: 14px; }
+    @media screen and (max-device-width: 375px), screen and (max-device-width: 414px) {
+      header ul {
+        padding: 0; } }
     header ul a {
       text-decoration: none;
       color: white;
@@ -41,20 +44,32 @@ header {
     header ul li {
       text-transform: uppercase;
       margin: 0 auto; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
     header {
       height: auto; }
       header ul {
-        display: block;
-        text-decoration: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: 95%;
         color: white;
         -webkit-transition: 600ms;
         transition: 600ms;
-        letter-spacing: 0.025em;
         margin: 0;
         font-family: 'Lobster', cursive;
         text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-        letter-spacing: 0.15em; } }
+        letter-spacing: 0.15em; }
+        header ul li {
+          margin: 0 5px; } }
 
 .goals {
   display: -webkit-box;
@@ -70,7 +85,7 @@ header {
   width: 80%;
   margin: 0 auto;
   font-family: 'Nunito', sans-serif; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
     .goals {
       display: block;
       width: 100%; } }
@@ -102,7 +117,7 @@ header {
     margin: 0 auto;
     padding: 20px 0;
     font-family: 'Nunito', sans-serif; }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
       .about__wraper {
         display: block;
         width: 100%;
@@ -121,10 +136,10 @@ header {
       background-size: cover;
       overflow: hidden;
       position: relative; }
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
         .about__wraper_myPhoto {
           width: 90%;
-          margin: 0 5%;
+          margin: 10px auto;
           background: url(../img/myPhoto.jpg) center no-repeat;
           background-size: cover; } }
     .about__wraper img[alt='JFD'] {
@@ -138,16 +153,10 @@ header {
       left: 0; }
     .about__wraper_text {
       display: block;
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
       padding: 0 0 0 20px;
       font-size: 16px; }
-      @media screen and (max-width: 320px) {
-        .about__wraper_text {
-          display: block;
-          width: 60%;
-          margin: 0;
-          padding: 10%; } }
       .about__wraper_text a {
         font-size: 18px;
         color: #F67F59;
@@ -181,6 +190,9 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .skills__container {
+        display: block; } }
     .skills__container h3 {
       font-family: 'Nunito', sans-serif;
       font-size: 22px;
@@ -194,9 +206,15 @@ header {
         border-left: 1px solid rgba(111, 184, 64, 0.3);
         border-right: 1px solid rgba(111, 184, 64, 0.3);
         position: relative; }
+        @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+          .skills__container_wraper:nth-child(1) {
+            border: 1px solid rgba(111, 184, 64, 0.3); } }
       .skills__container_wraper:last-child {
         height: 90%;
         border-right: 1px solid rgba(111, 184, 64, 0.3); }
+        @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+          .skills__container_wraper:last-child {
+            border: 1px solid rgba(111, 184, 64, 0.3); } }
       .skills__container_wraper-list {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -261,11 +279,18 @@ header {
     width: 90%;
     height: auto;
     margin: 0 auto; }
+    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+      .portfolio__html {
+        display: block; } }
     .portfolio__html_item {
       display: block;
       width: 25%;
       height: auto;
       margin: 20px; }
+      @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+        .portfolio__html_item {
+          width: 90%;
+          margin: 10px auto; } }
       .portfolio__html_item:hover img {
         -webkit-transition: 300ms;
         transition: 300ms;
@@ -292,12 +317,19 @@ header {
             justify-content: center;
     width: 90%;
     margin: 50px auto; }
+    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+      .portfolio__reactWraper {
+        display: block; } }
     .portfolio__reactWraper_item {
       display: block;
       width: 25%;
       height: auto;
       margin: 20px;
       position: relative; }
+      @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+        .portfolio__reactWraper_item {
+          width: 90%;
+          margin: 10px auto; } }
       .portfolio__reactWraper_item img[alt="react_logo"] {
         display: inline-block;
         width: 30px;
@@ -320,36 +352,6 @@ header {
         bottom: 15px;
         right: 15px; }
 
-.education {
-  display: block;
-  width: 100%;
-  margin: 50px auto; }
-  .education h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase; }
-  .education__wraper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 90%;
-    margin: 0 auto; }
-    .education__wraper_item {
-      display: block;
-      width: 100%;
-      font-family: 'Nunito', sans-serif;
-      border: 1px dotted rgba(111, 184, 64, 0.3);
-      padding: 0 10px; }
-
 .courses {
   display: block;
   width: 90%;
@@ -368,14 +370,17 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    @media screen and (max-width: 769px) {
+      .courses__wraper {
+        display: block;
+        word-wrap: break-word; } }
     .courses__wraper_item {
       display: block;
-      min-width: 40%;
+      width: 40%;
       height: auto;
       margin: 5px 10px;
       padding: 0 5px;
@@ -385,9 +390,14 @@ header {
       -webkit-transition: 600ms;
       transition: 600ms;
       background-color: white;
-      letter-spacing: 4px;
       padding-top: 2%; }
+      @media screen and (max-width: 769px) {
+        .courses__wraper_item {
+          width: 90%;
+          margin: 10px auto; } }
       .courses__wraper_item p {
+        display: inline-block;
+        width: 100%;
         font-family: 'Nunito', sans-serif;
         font-size: 14px;
         text-align: left;
@@ -414,6 +424,44 @@ header {
           border-bottom: 2px solid #F67F59;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box; }
+
+.education {
+  display: block;
+  width: 100%;
+  margin: 50px auto; }
+  .education h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+  .education__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; }
+    @media screen and (max-width: 769px) {
+      .education__wraper {
+        display: block;
+        width: 100%; } }
+    .education__wraper_item {
+      display: block;
+      width: 100%;
+      font-family: 'Nunito', sans-serif;
+      border: 1px dotted rgba(111, 184, 64, 0.3);
+      padding: 0 10px; }
+      @media screen and (max-width: 769px) {
+        .education__wraper_item {
+          width: 80%;
+          margin: 0 auto; } }
 
 .resume {
   display: block;
@@ -457,14 +505,19 @@ header {
 
 .contacts {
   display: block;
-  width: 50%;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 40px auto;
+  text-align: center; }
   .contacts h3 {
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase; }
+  .contacts p {
+    font-family: 'Nunito', sans-serif;
+    width: 90%;
+    margin: 20px auto; }
   .contacts__wraper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -476,13 +529,19 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%; }
+    width: 80%;
+    margin: 0 auto; }
+    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+      .contacts__wraper {
+        width: 90%;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .contacts__wraper_item {
       display: block;
-      width: 1fr; }
+      width: auto; }
       .contacts__wraper_item a {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 35px;
         display: inline-block;
         color: #2A8FFF;
         margin: 0 15px; }
