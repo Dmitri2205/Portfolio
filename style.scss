@@ -1,0 +1,540 @@
+@mixin lobster_text{
+	font-family: 'Lobster', cursive;
+	text-shadow:#302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0, 
+    #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
+    letter-spacing: 0.15em;
+}
+@mixin nunito{
+	font-family: 'Nunito', sans-serif;
+}
+@mixin kelly{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Kelly Slab', cursive;
+}
+
+$color: rgba(111,184,64,0.3);
+
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+header{
+	display: block;
+	width: 100%;
+	margin:0;
+	height: 50px;
+	line-height: 25px;
+	background-color: #2A8FFF;
+		ul{
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 80%;
+			padding: 0 10%;
+			list-style: none;
+			font-weight: bold;
+			color: white;
+			font-size: 14px;
+			@media screen and (max-device-width: 375px),screen and(max-device-width:414px){
+				padding: 0;
+			}
+			a{
+			text-decoration: none;
+			color: white;
+			transition: 600ms;
+			letter-spacing: 0.025em;
+			@include lobster_text;
+			&:hover{
+				 text-shadow:#302745 1px 1px 0, #302745 -1px -1px 0, 
+                 #302745 -1px 1px 0, #302745 1px -1px 0;
+			}
+		}
+			li{
+				text-transform: uppercase;
+				margin:0 auto;
+			}
+		}
+		@media screen and (max-width:375px),screen and(max-device-width:414px) {
+			height: auto;
+			ul{
+			  display: flex;
+			  flex-direction: row;
+			  justify-content: flex-start;
+			  flex-wrap: wrap ;
+			  width: 95%;
+			  color: white;
+			  transition: 600ms;
+			  margin: 0;
+			@include lobster_text;
+			li{
+				margin: 0 5px;
+			}
+			}
+		}
+}
+.goals{
+		@media screen and (max-width:375px),screen and(max-device-width:414px) {
+			display: block;
+			width: 100%;
+		}
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	@include nunito;
+	&__item{
+		margin: 10px;
+		span{
+			@include kelly;
+			color: #72D3F7;
+
+		}
+	}
+}
+.about{
+	display: block;
+	width: 100%;
+	background-color: #D2D2D2;
+
+		&__wraper{
+			display: flex;flex-direction: row;
+			justify-content: center;
+			width:80%;
+			margin:0 auto;
+			padding: 20px 0;
+			@include nunito;	
+				@media screen and (max-width:375px),screen and(max-device-width:414px) {
+				 display: block;
+				 width: 100%;
+				 text-align: center;
+				 img[alt='JFD']{
+				 	width: 90%;
+				 	display: inline-block;
+				 	margin: 10px auto;
+				 }
+				}
+		&_myPhoto{
+			display: block;
+			width: 420px;
+			height: 420px;
+			margin:0 auto ;
+			border-radius: 10px;
+			background: url( ../img/myPhoto.jpg) center no-repeat;
+			background-size: cover;
+			overflow: hidden;
+			position: relative;
+				@media screen and (max-width:375px),screen and(max-device-width:414px) {
+					width: 90%;
+				 margin: 10px auto;	
+				 background: url( ../img/myPhoto.jpg) center no-repeat;
+				 background-size: cover;
+				}
+		}
+		img[alt='JFD']{
+				 	display: inline-block;
+				 	width: 120px;
+				 	height: 60px;
+				 	margin: 0 auto;
+					border-radius: 10px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				 }
+
+			&_text{
+			display: block;
+			width: 90%;
+			margin: 0 auto ;
+			padding: 0 0 0 20px;
+			font-size: 16px;
+			a{
+				font-size: 18px;
+				color:#F67F59;
+				font-weight: bold;
+				text-decoration: none;
+				@include lobster_text;
+				text-shadow: none;
+				&:hover{
+					border-bottom: 2px solid #F67F59;
+					}
+				}
+			}
+		}
+	}
+	.skills{
+		display: block;
+		width: 90%;
+		margin: 50px auto;
+		h2{
+			text-align: center;
+			text-transform: uppercase;
+			@include nunito;
+			font-size: 30px;
+		}
+		&__container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+			@media screen and (max-width: 768px){
+				display: block;	
+			}
+			h3{
+				@include nunito;
+				font-size: 22px;
+				font-weight: 200;
+				text-shadow: none;
+				margin: 0;
+			}
+		&_wraper{
+			display: block;
+			padding: 0 25px;
+			&:nth-child(1){
+				border-left: 1px solid $color;
+				border-right: 1px solid $color;
+				position: relative;
+				@media screen and (max-width: 375px),screen and(max-device-width:414px){
+					border:1px solid $color;
+				}
+				}
+				&:last-child{
+					height: 90%;
+				border-right: 1px solid $color;
+				@media screen and (max-width: 375px),screen and(max-device-width:414px){
+					border:1px solid $color;
+				}	
+				}
+			&-list{
+				display: inline-flex;
+				@include kelly;
+				font-size: 16px;
+				display: inline-flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				list-style:none; 
+				color:#302745;
+				padding: 0;
+				margin-bottom: 0;
+
+				box-sizing: border-box;
+					li{
+						margin: 5px;
+						&:before{
+							content: '•';
+							color: rgb(111,184,64);
+						}
+					}
+					img[alt="react_logo"]{
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						margin-bottom: -5px;
+		
+					}
+				}
+			}
+		}
+	}
+.portfolio{
+	display: block;
+	width: 100%;
+	background-color: $color;
+	h3{
+		text-transform: uppercase;
+		padding: 50px 0;
+		font-size: 30px;
+		text-align: center;
+		@include nunito;
+		font-weight:bold;
+		margin:0;
+	}
+	&__html{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;	
+		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+			display: block;
+		}
+
+	&_item{
+		display: block;
+		width: 25%;
+		height: auto;
+		margin: 20px;
+		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+			width: 90%;
+			margin: 10px auto;
+		}
+		&:hover{
+			img{
+			transition: 300ms;
+			position: relative;
+			top: -5px;
+			left: -5px;
+			box-shadow: 5px 5px #72D3F7;
+			}
+		}
+		img{
+			transition: 300ms;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	}
+	&__reactWraper{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 90%;
+		margin: 50px auto;
+		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+		 display: block;
+		}
+		&_item{
+		display: block;
+		width: 25%;
+		height: auto;
+		margin: 20px;
+		position: relative;
+		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+			width: 90%;
+			margin: 10px auto;
+		}
+		img[alt="react_logo"]{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+			&:hover{
+			img[alt="react_thumb"]{
+			transition: 600ms;
+			position: relative;
+			top: -5px;
+			left: -5px;
+			box-shadow: 5px 5px #72D3F7;
+			}
+			img[alt="react_logo"]{
+				bottom: 15px;
+				right: 15px;
+			}
+		}
+		}
+	}
+}
+
+
+.courses{
+	display: block;
+	width: 90%;
+	padding:50px 0;
+	margin: 0 auto;
+	h2{
+		@include nunito;
+		text-align: center;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	&__wraper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+				@media screen and (max-width: 769px){
+					display: block;
+					word-wrap: break-word;
+				}
+		&_item{
+			display: block;
+			width: 40%;
+			height: auto;
+			margin: 5px 10px;
+			padding: 0 5px;
+			border: 1px solid #F67F59;
+			border-radius: 4px;
+			text-align: center;
+			transition: 600ms;
+			background-color: white;
+			padding-top: 2%;
+				@media screen and (max-width: 769px){
+					width: 90%;
+					margin: 10px auto;
+				}
+
+			p{
+				display: inline-block;
+				width: 100%;
+				@include nunito;
+				font-size: 14px;
+				text-align: left;
+				font-weight: bold;
+			}
+			&:hover{
+				transition: 600ms;
+				transform: scale(1.1);
+			}
+			a{
+				text-decoration: none;
+				@include kelly;
+				font-size: 18px;
+				text-transform: none;
+				color: #302447;
+				transition: 600ms;
+				&:hover{
+					transition: 600ms;
+					border-bottom: 2px solid #F67F59;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}
+
+
+
+.education{
+	display: block;
+	width: 100%;
+	margin: 50px auto;
+
+	h2{
+		@include nunito;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__wraper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 90%;
+		margin: 0 auto;
+				@media screen and (max-width: 769px){
+					display: block;
+					width: 100%;
+
+					
+				}
+			&_item{
+				display: block;
+				width: 100%;
+				@include nunito;
+				border: 1px dotted $color;
+				padding: 0 10px;
+				@media screen and (max-width: 769px){
+					width: 80%;
+					margin: 0 auto;
+				}
+			}
+	}
+
+}
+
+
+.resume{
+	display: block;
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #302745;
+	color: white;
+	padding: 50px 0;
+	@include nunito;
+	h2{
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	p{
+		font-size: 18px;
+	}
+	a{
+		@include kelly;
+		color: red;
+		font-weight: bold;
+
+	}
+	a.resume__downloadLink{
+		display: inline-block;
+		width: 120px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 18px;
+		border-radius: 5px;
+		border:1px solid white;
+		color: white;
+		padding: 10px;
+		text-decoration: none;
+		transition: 600ms;
+		&:hover{
+			transition: 600ms;
+			color: rgb(111,184,64);
+			border: 1px solid  rgb(111,184,64);
+		}
+	}
+}
+
+
+.contacts{
+	display: block;
+	width: 100%;
+	margin:40px auto;
+	text-align: center;
+		h3{
+			@include nunito;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		p{
+			@include nunito;
+			width: 90%;
+			margin:20px auto;	
+		}
+		&__wraper{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 80%;
+			margin: 0 auto;
+				@media screen and (max-width: 375px),screen and(max-device-width:414px){
+					width: 90%;
+					flex-wrap: wrap;
+				}
+			&_item{
+				display: block;
+				width: auto;
+				a {
+					text-decoration: none;
+					font-size: 35px;
+					display: inline-block;
+					color:  #2A8FFF;
+					margin: 0 15px;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+

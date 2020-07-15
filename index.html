@@ -1,273 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Примеры работ</title>
-	<link rel="stylesheet" type="text/css" href="style.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Дмитрий Баранов</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Lobster&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
 </head>
+
 <body>
+    <header class="header">
+        <ul>
+            <a href="#about">
+                <li>обо мне</li>
+            </a>
+            <a href="#skills">
+                <li>навыки</li>
+            </a>
+            <a href="#portfolio">
+                <li>портфолио</li>
+            </a>
+            <a href="#courses">
+                <li>курсы</li>
+            </a>
+            <a href="#education">
+                <li>образование</li>
+            </a>
+            <a href="#resume">
+                <li>резюме</li>
+            </a>
+            <a href="#contacts">
+                <li>контакты</li>
+            </a>
+        </ul>
+    </header>
+    <section class="goals">
+        <div class="goals__item">
+            <h3>Цели</h3>
+            <p>Расчитываю повысить свой грейд до <span>middle</span>, либо <span>fullstack</span>, в направлении мобильной или десктопной разработки.Считаю,что будущее за гаджетами и современными технологиями.</p>
+        </div>
+        <div class="goals__item">
+            <h3>Хобби</h3>
+            <p>Интересуюсь электроникой,ремонтирую ПК/Ноутбуки/моноблоки на програмном и компонентном уровне,прошиваю игровые косноли и смартфоны.Давно и достаточно хорошо дружу с паяльниками и мультитестерами.Гитарист-самоучка с 2008 года.Сноуборд и экстремальные виды спорта с 2006 года.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about__wraper">
+            <div class="about__wraper_myPhoto"><img class="JFD" src="https://smartprogress.do/uploadImages/000809397_l_crop.jpg" alt="JFD"></div>
+            <div class="about__wraper_text">
+                <p style="margin-top: 0;">По образованию инженер автосервиса.Имею два диплома профессионального образования,повышение квалификации и неоконченое высшее образование по направлению "Автомобильное хозяйство и автосервис"(МАДИ).
+                    <br>
+                    Профессия автомеханика, со временем, перестала приносить удовлетворение и я решил поменять профиль.Мне всегда было интересно программирование и электроника,поэтому было решено выбрать направление Frontend разработки.
+                    <br>
+                    Первое время я изучал основы и базу самостоятельно.Изучая web-разработку с января 2019 года начинал с вёрстки писем и простых лэндингов,далее приступил к изучению JavaScript и различных фрэймворков и библиотек,но потом понял,что мне нужно больше информации и наставничество по более углублённым темам,и я решил закончить курсы от Mail.ru Group на портале <a href="https://geekbrains.ru/users/3809871">Geekbrains.ru</a>.
+                    <br>
+                    <br>
+                    Больше всего люблю верстать и стилизовать элементы,но если стоит интересная задача, для которой нужно использовать JS,то ухожу в работу с головой.С лёгкостью читаю документацию,тексты и блоги на английском.
+                    <br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2 id="skills">навыки</h2>
+        <div class="skills__container">
+            <div class="skills__container_wraper">
+                <h3>Основные навыки вёрстки:</h3>
+                <ul class="skills__container_wraper-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>LESS/SCSS</li>
+                    <li>JS(ES6+)</li>
+                    <li>БЭМ</li>
+                    <li>Bootstrap 4</li>
+                    <li>@media queries</li>
+                    <li>Flexbox</li>
+                    <li>Animate.css</li>
+                    <li>Кросбраузерная,адаптивная/резиновая вёрстка</li>
+                    <li>React.js <img src="https://web-creator.ru/uploads/Page/33/react.svg" alt="react_logo"></li>
+                </ul>
+            </div>
+            <div class="skills__container_wraper">
+                <h3>Дополнительные навыки и опыт использования инструментов:</h3>
+                <ul class="skills__container_wraper-list">
+                    <li>webpack 4</li>
+                    <li>webpack dev-server</li>
+                    <li>webpack CLI</li>
+                    <li>Node Package Manager</li>
+                    <li>Postman</li>
+                    <li>Open Server</li>
+                    <li>SmartGit/Git Kraken/Github Desktop</li>
+                    <li>Figma</li>
+                    <li>Avocode</li>
+                    <li>Photoshop</li>
+                    <li>компилятор препроцессоров LESS/SASS/SCSS Koala</li>
+                    <li>Lighthouse</li>
+                    <li>React Router</li>
+                    <li>React Redux</li>
+                    <li>PropTypes</li>
+                    <li>react-yandex-map</li>
+                    <li>Yandex Maps JS API</li>
+                    <li>XHR</li>
+                    <li>Fetch</li>
+                    <li>Promise</li>
+                    <li>axios + REST API</li>
+                    <li>Основы PHP</li>
+                    <li>Основы MySQL</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <h3 id="portfolio">Портфолио</h3>
+        <div class="portfolio__html">
+            <div class="portfolio__html_item">
+                <a href=" https://dmitri2205.github.io/Bouncy/"><img src="img/template-1.png" alt="template-1"></a>
+            </div>
+            <div class="portfolio__html_item">
+                <a href=" https://dmitri2205.github.io/Interior/"><img src="img/template-2.png" alt="template-2"></a>
+            </div>
+            <div class="portfolio__html_item">
+                <a href="https://dmitri2205.github.io/videobg/"><img src="img/template-3.png" alt="template-3"></a>
+            </div>
+            <div class="portfolio__html_item">
+                <a href="https://dmitri2205.github.io/BEM/."><img src="img/template-4.png" alt="template-4"></a>
+            </div>
+            <div class="portfolio__html_item">
+                <a href="https://dmitri2205.github.io/Medicare/"><img src="img/template-5.png" alt="template-5"></a>
+            </div>
+            <div class="portfolio__html_item">
+                <a href="https://dmitri2205.github.io/Japan/"><img src="img/template-6.png" alt="template-6"></a>
+            </div>
+        </div>
+		    <div class="portfolio__html_item">
+                <a href="https://dmitri2205.github.io/MoGo/"><img src="img/template-9.png" alt="template-6"></a>
+            </div>
+        </div>
 
 
-<header>
-	<p>Добро пожаловать в портфолио</p>
-</header>
 
 
 
-<section class="about">
-	
-<div class="about__text" style="text-align: left;">
-<img class="myPhoto" src="img/myPhoto.jpg" alt="Моё фото">
-<h3>Обо мне</h3>
-<p>По образованию инженер автосервиса.Имею два диплома профессионального образования,повышение квалификации и неоконченое высшее образование по направлению "автосервис"(МАДИ).
-	<br>
-	Предыдущая профессия, со временем, перестала приносить удовлетворение и я решил поменять профиль.Мне всегда было интересно программирование и электроника,поэтому было решено выбрать направление Frontend разработки.
-	<br>
-	Первое время я изучал основы и базу самостоятельно.Изучая web-разработку с января 2019 года начинал с вёрстки писем и простых лэндингов,далее приступил к изучению JavaScript и различных фрэймворков и библиотек,но потом понял,что мне нужно больше информации и наставничество по более углублённым темам,и я решил закончить курсы от Mail.ru Group на портале <a href="https://geekbrains.ru/">Geekbrains</a>.
-	<br>
-<div class="myTechs__heading">
-	<div class="heading__wraper">
-	<h3>Стэк</h3>
-		<img    class="myTechs__heading-arrow" 
-				src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Circle_arrow_right_font_awesome.svg/1200px-Circle_arrow_right_font_awesome.svg.png" alt="arow right">
-	</div>
-	<ul class="myTechs">
-		<li>webpack 4</li>
-		<li>webpack dev-server</li>
-		<li>webpack CLI</li>
-		<li>Node Package Manager</li>
-		<li>Postman</li>
-		<li>Open Server</li>
-		<li>SmartGit/Git Kraken</li>
-		<li>Figma</li>
-		<li>Avocode</li>
-		<li>Photoshop</li>
-		<li>компилятор препроцессоров LESS/SASS/SCSS Koala</li>
-		<li>LESS</li>
-		<li>Lighthouse</li>
-		<li>расширение React Devtools</li>
-		<li>расширение Redux Devtools</li>
-		<li>Bootstrap 4</li>
-		<li>Animate.css</li>
-		<li>React.js</li>
-		<li>React Router</li>
-		<li>React Redux</li>
-		<li>PropTypes</li>
-		<li>react-yandex-map</li>
-		<li>Yandex Maps JS API</li>
-		<li>XHR</li>
-		<li>Fetch</li>
-		<li>Promise</li>
-		<li>axios</li>
-		<li>ES6</li>
-	</ul>
-</div>
-<div class="skills">
-	<h3 class="skills__heading" 
-		style="text-shadow:1px 1px 0px #1d7d96;color:white">О навыках и успехах</h3>
-	<img    class="skills__arrow" 
-				src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Circle_arrow_right_font_awesome.svg/1200px-Circle_arrow_right_font_awesome.svg.png" alt="arow right">
-	<div class="myText">
-	<p >10.06.2020 закончил и успешно сдал  выпускной проект по программе обучения(формат проекта:Progressive Web App).Участвовал в проекте в качестве тех.лида.Принимал участие в настройке и разработке backend части(взаимодействие с backend-разработчиками),принимал решения по макетам вместе с дизайнерами и product owner'ом,продумывал структуру приложения и взаимодействия компонентов друг с другом.Консультровал команду, с которой начинал разработку проекта, по всем техническим вопросам и документации, если возникали сложности.Принимал участие в разработке формата вывода данных с сервера нейронной сети вместе со специалистом по ИНС.Поверхностно изучил ИНС и принцип их действия,настроил передачу видеопотока с IP-камеры в приложение, через сервер клиентских данных.Отчитывался кураторам разработки проектов о функциональности нашего продукта.
-	<br>
-	Больше всего люблю верстать и стилизовать элементы,но если стоит интересная задача, для которой нужно использовать JS,то ухожу в работу с головой.С лёгкостью читаю документацию на английском,так что проблем это не вызывает.Расчитываю повысить свой грейд до middle, либо fullstack, в направлении мобильной или десктопной разработки.Считаю,что будущее за гаджетами и современными технологиями,так что впереди очень интересный путь к цели :)
-	<br>
-	Ниже вы можете посмотреть примеры моих работ. Надеюсь они вас заинтересуют.
-	   </p>
-	   </div>
-</div>
-</div>
-</section>
+        <div class="portfolio__reactWraper">
+            <div class="portfolio__reactWraper_item">
+                <img src="img/template-7.png" alt="react_thumb">
+                <img src="https://web-creator.ru/uploads/Page/33/react.svg" alt="react_logo">
+            </div>
+            <div class="portfolio__reactWraper_item">
+                <img src="img/template-8.png" w alt="react_thumb">
+                <img src="https://web-creator.ru/uploads/Page/33/react.svg" alt="react_logo">
+            </div>
 
-
-<section class="main">
-
-	<div class="html">
-		<h1>Обычная вёрстка по макетам</h1>
-		
-		<div class="html__items">
-		
-			<div class="item ">
-				<a href="https://dmitri2205.github.io/template-5/">
-					<img src="img/template-8.png"/>
-				</a>
-				
-				<h6 >Простая вёрстка по макету(не responsive)</h6>
-				<div class="used__technologies">
-					<img style="width:75px;border-radius:0px;margin:0 0 10px 10px" src="https://i.pinimg.com/originals/69/53/02/695302a395d0eb94a8bce6b95dbf92f6.png" alt="HTML5+CSS3">
-						<img style="width:60px" src="https://ahmadwaqas.com/wp-content/uploads/2018/10/css-grid-intro-600x355_9ae2b1f2d2d6386d9d2875a1d4b04dad.jpg" alt="css grid">
-				
-				</div>
-
-			</div>
-
-			<div class="item ">
-				<a href="https://dmitri2205.github.io/template-2/"><img src="img/template-7.png"/></a>
-					<h6 >Простая вёрстка по макету(не responsive)</h6>
-				<div class="used__technologies">
-					<img style="width:75px;border-radius:0px;margin:0 0 10px 10px" src="https://i.pinimg.com/originals/69/53/02/695302a395d0eb94a8bce6b95dbf92f6.png" alt="HTML5+CSS3">
-					<p> <span style="font-weight: bold;font-size: 20px">+</span> CSS FLoat</p>
-				</div>
-			</div>
-
-			<div class="item ">
-				<a href="https://kradyedy.github.io/project/"><img src="img/template-2.png"/></a>
-				<h6 >Стек технологий</h6>
-				<div class="used__technologies">
-					<img src="https://jquery-plugins.net/image/plugin/bootstrap-4-the-most-popular-html-css-and-js-library.jpg" alt="bootstrap 4">
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlANlL871PYuE_gYcJZ30tApxec9Pg-RiRhZsH4Wf9K_DyKJ-K&usqp=CAU" alt="less">
-					<img src="https://www.acunetix.com/wp-content/uploads/2013/08/scan-html5-websites-vulnerabilities.jpg" alt="html5">
-				</div>
-			</div>
-
-
-			<div class="item">
-				<a href="https://kradyedy.github.io/BEM/"><img src="img/template-4.png"/></a>
-				<h6 >Стек технологий</h6>
-				<div class="used__technologies">
-					<img src="https://jennyknuth.com/wp-content/uploads/2018/03/BEM-1.png" alt="БЭМ">
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlANlL871PYuE_gYcJZ30tApxec9Pg-RiRhZsH4Wf9K_DyKJ-K&usqp=CAU" alt="less">
-					<img src="https://www.acunetix.com/wp-content/uploads/2013/08/scan-html5-websites-vulnerabilities.jpg" alt="html5">
-					<img src="https://www.slavlee.de/fileadmin/user_upload/images/slavlee_shortcodes/fontawesome.png" alt="fontawesome">
-				</div>
-			</div>
-
-
-			<div class="item ">
-				<a href="https://kradyedy.github.io/Template-1/"><img src="img/template-1.png"/></a>
-				<h6>Стек технологий</h6>
-				<div class="used__technologies">
-					<img src="https://jquery-plugins.net/image/plugin/bootstrap-4-the-most-popular-html-css-and-js-library.jpg" alt="bootstrap 4">
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlANlL871PYuE_gYcJZ30tApxec9Pg-RiRhZsH4Wf9K_DyKJ-K&usqp=CAU" alt="less">
-					<img src="https://www.claudiodimauro.it/wp-content/uploads/2016/03/js-logo.png" alt="js">
-					<img src="https://www.acunetix.com/wp-content/uploads/2013/08/scan-html5-websites-vulnerabilities.jpg" alt="html5">
-				</div>
-
-			</div>
 			
-			
-			<div class="item">
-				<a href="https://kradyedy.github.io/template-3/"><img src="img/template-3.png"/></a>
-				<h6 >Стек технологий</h6>
-				<div class="used__technologies">
-					<img style ='width:70px;height:25px;margin:2% 0 0 1%;border:1px solid gray;border-radius:10px' src="img/animatecss.png" alt="animate css">
-				
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlANlL871PYuE_gYcJZ30tApxec9Pg-RiRhZsH4Wf9K_DyKJ-K&usqp=CAU" alt="less">
-				
-					<img src="https://www.acunetix.com/wp-content/uploads/2013/08/scan-html5-websites-vulnerabilities.jpg" alt="html5">
-				
-					<img src="https://www.slavlee.de/fileadmin/user_upload/images/slavlee_shortcodes/fontawesome.png" alt="fontawesome">
-				
-					<img style="width:60px" src="https://ahmadwaqas.com/wp-content/uploads/2018/10/css-grid-intro-600x355_9ae2b1f2d2d6386d9d2875a1d4b04dad.jpg" alt="css grid">
-				
-					<img src="https://spinspire.com/sites/default/files/field/image/95302236.png" alt="media queries">
-				</div>
-			</div>
 
+        </div>
+    </section>
+    <section class="courses">
+        <h2 id="courses">курсы</h2>
+        <div class="courses__wraper">
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/623520">
+                    Основы HTML/CSS
+                </a>
+                <p>Успешно изучил основы HTML/CSS <br> с максимальным колличеством балов.</p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/627404">Основы программирования</a>
+                <p>Основы и введение в прграммирование.
+                    Алгоритмы,циклы,массивы,переменные,функции.
+                </p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/647110">Основы баз данных</a>
+                <p>Основы MySQL.
+                    <br>
+                    Запросы,join,foreign keys,etc.</p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/655048">Git. Быстрый старт</a>
+                <p>Основы работы с Git.
+                    Push,Pull,Commit,Conflict,etc.
+                </p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/659211">HTML5 и CSS3</a>
+                <p>Стандарты HTML5/CSS3
+                    Flexbox,Grid,Animate.css,
+                    W3C,responsive,CSS Frameworks,LESS,CDN.
+                </p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/661206">Веб-разработка.Быстрый старт</a>
+                <p>Основы PHP,Open Server,Deploy сайтов</p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/680829">JavaScript.Уровень 1</a>
+                <p>Основы языка,операторы,циклы,массивы,
+                    объекты,введение в DOM,события.
+                </p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/certificates/700774">JavaScript.Уровень 2</a>
+                <p>ООП,асинхронные запросы,регулярные выражения,
+                    основы Vue.js,сборка.
+                </p>
+            </div>
+            <div class="courses__wraper_item">
+                <a href="https://geekbrains.ru/go/ZHn~Rg">React.JS</a>
+                <p>Основы React,жизненные циклы,Material UI,
+                    роутинг,Redux,middlewares/actions,API,<br>
+                    Progressive Web App.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2>Образование</h2>
+        <div class="education__wraper">
+            <div class="education__wraper_item">
+                <h3>Начальное профессиональное образование</h3>
+                <h4>Государственное Бюджетное Образовательное Учереждение Политехнический Техникум №2</h4>
+                <p>Год начала обучения:2009</p>
+                <p>Год окончания обучения:2012</p>
+                <p>Автослесарь 3го разряда</p>
+            </div>
+            <div class="education__wraper_item">
+                <h3>Повышение квалификации</h3>
+                <h4>Государственное Бюджетное Образовательное Учереждение Политехнический Техникум №2</h4>
+                <p>Год начала обучения:2012</p>
+                <p>Год окончания обучения:2012</p>
+                <p>Автослесарь 4го разряда</p>
+            </div>
+            <div class="education__wraper_item">
+                <h3>Среднее профессиональное образование</h3>
+                <h4>Государственное Бюджетное Образовательное Учереждение Политехнический Техникум №2</h4>
+                <p>Год начала обучения:2012</p>
+                <p>Год окончания обучения:15.01.2015</p>
+                <p>Техник</p>
+            </div>
+            <div class="education__wraper_item">
+                <h3>Высшее профессиональное образование</h3>
+                <h4>Московский Автомобильно-Дорожный Институт (МАДИ ГТУ)</h4>
+                <p>Год начала обучения:2015</p>
+                <p>Год окончания обучения:2018(неполное высшее)</p>
+                <p>Автомобильное хозяйство и автосервис</p>
+                <p>Бакалавр</p>
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="resume">
+        <h2>резюме</h2>
+        <p>Вы можете скачать моё резюме по ссылке ниже.Резюме аналогично оригиналу на <a href="hh.ru">HH.ru</a></p>
+        <a class="resume__downloadLink" href="misc/BaranovDS.pdf" download>скачать</a>
+    </section>
+    <footer class="contacts" id="contacts">
+        <h3>контакты</h3>
+        <p>Вы можете связаться со мной в социальных сетях,написать мне на почту или позвонить.</p>
+        <div class="contacts__wraper">
+            <div class="contacts__wraper_item">
+                <a href="https://www.facebook.com/profile.php?id=100053213349217"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="contacts__wraper_item"><a href="https://vk.com/baranov__dmitry_sergeevich"><i class="fab fa-vk"></i></a></div>
+            <div class="contacts__wraper_item"><a href="https://t.me/Baranov_Dmitry"><i class="fab fa-telegram"></i></a></div>
+            <div class="contacts__wraper_item"> <a href="https://wa.me/qr/VHES5R3A5VDEL1"><i class="fab fa-whatsapp"></i></a></div>
+            <div class="contacts__wraper_item"> <a href="tel:89998458541"><i class="fas fa-mobile-alt"></i></a></div>
+            <div class="contacts__wraper_item"> <a href="mailto:dimch2205@gmail.com"> <i class="fas fa-at"></i></a></div>
+        </div>
+    </footer>
+    <script>
+    const anchors = document.querySelectorAll('a[href*="#"]')
 
-		
-		</div>
-	</div>
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault()
 
+            const blockID = anchor.getAttribute('href').substr(1)
+            console.log(anchor.getAttribute('href').substr(1));
 
-
-	<div class="react">
-		
-		<img style="width:150px;height:50px;margin-bottom:30px"src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png" alt="react">
-		
-		<div class="react__items">
-			<div class="react__item">
-				<a href="https://github.com/Dmitri2205/ReactTable"><img src="img/template-5.png" alt="template-5"></a>
-			<div class="react__item-desc">
-				<p>Простая таблица получающая данные на основе выбора пользователя на 32 или 1000 строк,с возможностью сортировки по определённому параметру.Описание проекта вы можете найти на странице репозитория.
-					<br>
-					<br>
-				Обратите внимание!Запросы могут не отсылаться из-за политики защиты запросов(CORS)вашего браузера. </p>
-				</div>
-			</div>
-		
-
-			<div class="react__item parkon">
-				<div class="parkon__heading">
-				<a href="https://github.com/Dmitri2205/parkon"><img src="img/template-6.png" alt="ParkOn"></a>
-				<h6 >Проект выпускной практики на портале GeekBrains от Mail.ru по направлению "Frontend разработка"
-				</h6>
-				<p class="about__app">Приложение позволяет найти свободные места на парковках на Яндекс.Карте,просмотреть потоковое видео с камеры парковочной площадки,а так же построить маршрут до выбранной площадки с парковочными местами.
-					Вся структура приложения написана и разработана мной за 2 месяца,сервера клиентских данных и нейронной сети разрабатывали члены моей команды.</p>
-				<div class="parkon__description">
-				
-					<br>
-					<br>
-				<p style="width: 100%;padding: 0 5px">
-					
-					Проект<span style="color:black"> выполнен по MVP и имеет
-					 <span style="font-size: 15px;color: #FF9D45">неполный или ограниченый</span> функционал</span><span style="font-weight: bold;color:#59FFC2">(исключая webpack-dev-server или localhost:8080)</span>.В дальнейшем планируется продолжать работу над ним в составе нашей команды разработчиков "ParkOn".
-					<br>
-					Для серверной стороны использовался Node.js + MongoDB + express + passport + ffmpeg.
-					<br>
-					Нейронная сеть использует библиотеку TensorFlow.js.Для обучения моделей использовалась python-библиотека Keras.
-					Вход в приложение возможен по почте.Для того чтобы попасть в приложение,вам нужно будет зарегистрироваться.
-					<br>
-					<br>
-				<span style="color:#FF9D45;font-size: 15px">На данный момент некоторый функционал ограничен CORS политикой запросов от VDS сервера,который был арендован на хостинге firstvds.ru:</span>
-					<br>
-				</p>
-			
-				<ul style="color:#FF9D45">
-					<li>1.возможность регистрации через смс</li>
-					<li>2.доступ к геопозиции пользователя и построение маршрута</li>
-					<li>3.Ограничена работа service worker,приложение ожидает подключения к интернету</li>
-					<li>4.Поиск и голосовое управление будут реализованы в будущем</li>
-					<br>
-				</ul>
-			
-				<h6 style="width: 100%">
-					В проекте использовались такие технологии как:
-				</h6>
-			
-				<ul class="ParkOn__techs">
-					<li>webpack 4</li>
-					<li>webpack dev-server</li>
-					<li>@babel</li>
-					<li>@babel/loader</li>
-					<li>@babel/preset-env</li>
-					<li>@babel/polyfil</li>
-					<li>style-loader</li>
-					<li>file-loader</li>
-					<li>react-yandex-map</li>
-					<li>yandex maps JavaScript API</li>
-					<li>sms.ru API</li>
-					<li>axios</li>
-					<li>используется service worker для работы приложения оффлайн</li>
-
-				</ul>
-					
-			</div>
-				</div>
-				
-				
-		</div>
-	</div>
-</div>
-
-</section>
-<footer >
-<p>Освоенные мною учебные программы и сертификаты:</p>
-<ul style="display:flex;flex-direction:row;justify-content:space-around;flex-wrap: wrap;padding: 0px">	
-<li><a href="https://geekbrains.ru/certificates/623520" >html/css</a></li>
-<li><a href="https://geekbrains.ru/certificates/627404" >Основы программирования</a></li>
-<li><a href="https://geekbrains.ru/certificates/647110" >Основы баз данных</a></li>
-<li><a href="https://geekbrains.ru/certificates/655048" >Git. Быстрый старт</a></li>
-<li><a href="https://geekbrains.ru/certificates/659211" >HTML5 и CSS3</a></li>
-<li><a href="https://geekbrains.ru/certificates/661206" >Веб-разработка. Быстрый старт</a></li>
-<li><a href="https://geekbrains.ru/certificates/680829" >JavaScript. Уровень 1</a></li>
-<li><a href="https://geekbrains.ru/certificates/700774" >JavaScript. Уровень 2</a></li>
-<li><a href="https://geekbrains.ru/go/ZHn~Rg" >ReactJS</a></li>
-<li>	<a href="https://geekbrains.ru/go/-ECgl4">Стажировка в GeekBrains (Web)</a></li>
-	</ul>
-	<p style="font-size: 10px">Copyright © Dmitry Baranov 2020</p>
-</footer>
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+    </script>
+    <script defer src="js/all.min.js"></script>
 </body>
+
 </html>
