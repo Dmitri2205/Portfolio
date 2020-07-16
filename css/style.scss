@@ -351,6 +351,22 @@ header{
 		font-size: 30px;
 		text-transform: uppercase;
 	}
+	p{
+		width: 70%;
+		@include nunito;
+		font-size: 18px;
+		margin: 30px auto;
+		a{
+			font-size: 18px;
+				color:#F67F59;
+				font-weight: bold;
+				text-decoration: none;
+				@include lobster_text;
+				text-shadow: none;
+				&:hover{
+					border-bottom: 2px solid #F67F59;}
+		}
+	}
 	&__wraper{
 		display: flex;
 		flex-direction: row;
