@@ -128,12 +128,13 @@ header {
           margin: 10px auto; } }
     .about__wraper_myPhoto {
       display: block;
-      width: 420px;
-      height: 420px;
+      width: 280px;
+      height: 280px;
       margin: 0 auto;
       border-radius: 10px;
       background: url(../img/myPhoto.jpg) center no-repeat;
       background-size: cover;
+      background-position: -100px 0;
       overflow: hidden;
       position: relative; }
       @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
@@ -144,8 +145,8 @@ header {
           background-size: cover; } }
     .about__wraper img[alt='JFD'] {
       display: inline-block;
-      width: 120px;
-      height: 60px;
+      width: 100px;
+      height: 45px;
       margin: 0 auto;
       border-radius: 10px;
       position: absolute;
