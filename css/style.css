@@ -256,6 +256,9 @@ header {
   display: block;
   width: 100%;
   background-color: rgba(111, 184, 64, 0.3); }
+  .portfolio p {
+    font-family: 'Nunito', sans-serif;
+    text-align: center; }
   .portfolio h3 {
     text-transform: uppercase;
     padding: 50px 0;
