@@ -27,7 +27,7 @@ header {
     font-weight: bold;
     color: white;
     font-size: 14px; }
-    @media screen and (max-device-width: 375px), screen and (max-device-width: 414px) {
+    @media screen and (max-width: 375px), screen and (max-width: 414px) {
       header ul {
         padding: 0; } }
     header ul a {
@@ -44,7 +44,7 @@ header {
     header ul li {
       text-transform: uppercase;
       margin: 0 auto; }
-  @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+  @media screen and (max-width: 375px), screen and (max-width: 414px) {
     header {
       height: auto; }
       header ul {
@@ -85,7 +85,7 @@ header {
   width: 80%;
   margin: 0 auto;
   font-family: 'Nunito', sans-serif; }
-  @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+  @media screen and (max-width: 375px), screen and (max-width: 414px) {
     .goals {
       display: block;
       width: 100%; } }
@@ -102,6 +102,12 @@ header {
   display: block;
   width: 100%;
   background-color: #D2D2D2; }
+  .about h2 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+    margin: 0; }
   .about__wraper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -117,7 +123,7 @@ header {
     margin: 0 auto;
     padding: 20px 0;
     font-family: 'Nunito', sans-serif; }
-    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+    @media screen and (max-width: 375px), screen and (max-width: 414px) {
       .about__wraper {
         display: block;
         width: 100%;
@@ -137,7 +143,7 @@ header {
       background-position: -100px 0;
       overflow: hidden;
       position: relative; }
-      @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+      @media screen and (max-width: 375px), screen and (max-width: 414px) {
         .about__wraper_myPhoto {
           width: 90%;
           margin: 10px auto;
@@ -207,13 +213,13 @@ header {
         border-left: 1px solid rgba(111, 184, 64, 0.3);
         border-right: 1px solid rgba(111, 184, 64, 0.3);
         position: relative; }
-        @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+        @media screen and (max-width: 375px), screen and (max-width: 414px) {
           .skills__container_wraper:nth-child(1) {
             border: 1px solid rgba(111, 184, 64, 0.3); } }
       .skills__container_wraper:last-child {
         height: 90%;
         border-right: 1px solid rgba(111, 184, 64, 0.3); }
-        @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+        @media screen and (max-width: 375px), screen and (max-width: 414px) {
           .skills__container_wraper:last-child {
             border: 1px solid rgba(111, 184, 64, 0.3); } }
       .skills__container_wraper-list {
@@ -283,7 +289,7 @@ header {
     width: 90%;
     height: auto;
     margin: 0 auto; }
-    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+    @media screen and (max-width: 375px), screen and (max-width: 414px) {
       .portfolio__html {
         display: block; } }
     .portfolio__html_item {
@@ -291,7 +297,7 @@ header {
       width: 25%;
       height: auto;
       margin: 20px; }
-      @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+      @media screen and (max-width: 375px), screen and (max-width: 414px) {
         .portfolio__html_item {
           width: 90%;
           margin: 10px auto; } }
@@ -321,7 +327,7 @@ header {
             justify-content: center;
     width: 90%;
     margin: 50px auto; }
-    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+    @media screen and (max-width: 375px), screen and (max-width: 414px) {
       .portfolio__reactWraper {
         display: block; } }
     .portfolio__reactWraper_item {
@@ -330,7 +336,7 @@ header {
       height: auto;
       margin: 20px;
       position: relative; }
-      @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+      @media screen and (max-width: 375px), screen and (max-width: 414px) {
         .portfolio__reactWraper_item {
           width: 90%;
           margin: 10px auto; } }
@@ -551,7 +557,7 @@ header {
             justify-content: center;
     width: 80%;
     margin: 0 auto; }
-    @media screen and (max-width: 375px), screen and (max-device-width: 414px) {
+    @media screen and (max-width: 375px), screen and (max-width: 414px) {
       .contacts__wraper {
         width: 90%;
         -ms-flex-wrap: wrap;

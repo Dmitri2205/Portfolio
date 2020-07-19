@@ -39,7 +39,7 @@ header{
 			font-weight: bold;
 			color: white;
 			font-size: 14px;
-			@media screen and (max-device-width: 375px),screen and(max-device-width:414px){
+			@media screen and (max-width: 375px),screen and(max-width:414px){
 				padding: 0;
 			}
 			a{
@@ -58,7 +58,7 @@ header{
 				margin:0 auto;
 			}
 		}
-		@media screen and (max-width:375px),screen and(max-device-width:414px) {
+		@media screen and (max-width:375px),screen and(max-width:414px) {
 			height: auto;
 			ul{
 			  display: flex;
@@ -77,7 +77,7 @@ header{
 		}
 }
 .goals{
-		@media screen and (max-width:375px),screen and(max-device-width:414px) {
+		@media screen and (max-width:375px),screen and(max-width:414px) {
 			display: block;
 			width: 100%;
 		}
@@ -100,6 +100,13 @@ header{
 	display: block;
 	width: 100%;
 	background-color: #D2D2D2;
+	h2{
+		@include nunito;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 30px 0;
+		margin: 0;
+	}
 
 		&__wraper{
 			display: flex;flex-direction: row;
@@ -108,7 +115,7 @@ header{
 			margin:0 auto;
 			padding: 20px 0;
 			@include nunito;	
-				@media screen and (max-width:375px),screen and(max-device-width:414px) {
+				@media screen and (max-width:375px),screen and(max-width:414px) {
 				 display: block;
 				 width: 100%;
 				 text-align: center;
@@ -129,7 +136,7 @@ header{
 			background-position: -100px 0;
 			overflow: hidden;
 			position: relative;
-				@media screen and (max-width:375px),screen and(max-device-width:414px) {
+				@media screen and (max-width:375px),screen and(max-width:414px) {
 					width: 90%;
 				 margin: 10px auto;	
 				 background: url( ../img/myPhoto.jpg) center no-repeat;
@@ -199,14 +206,14 @@ header{
 				border-left: 1px solid $color;
 				border-right: 1px solid $color;
 				position: relative;
-				@media screen and (max-width: 375px),screen and(max-device-width:414px){
+				@media screen and (max-width: 375px),screen and(max-width:414px){
 					border:1px solid $color;
 				}
 				}
 				&:last-child{
 					height: 90%;
 				border-right: 1px solid $color;
-				@media screen and (max-width: 375px),screen and(max-device-width:414px){
+				@media screen and (max-width: 375px),screen and(max-width:414px){
 					border:1px solid $color;
 				}	
 				}
@@ -267,7 +274,7 @@ header{
 		width: 90%;
 		height: auto;
 		margin: 0 auto;	
-		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+		@media screen and(max-width: 375px),screen and(max-width:414px) {
 			display: block;
 		}
 
@@ -276,7 +283,7 @@ header{
 		width: 25%;
 		height: auto;
 		margin: 20px;
-		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+		@media screen and(max-width: 375px),screen and(max-width:414px) {
 			width: 90%;
 			margin: 10px auto;
 		}
@@ -302,7 +309,7 @@ header{
 		justify-content: center;
 		width: 90%;
 		margin: 50px auto;
-		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+		@media screen and(max-width: 375px),screen and(max-width:414px) {
 		 display: block;
 		}
 		&_item{
@@ -311,7 +318,7 @@ header{
 		height: auto;
 		margin: 20px;
 		position: relative;
-		@media screen and(max-width: 375px),screen and(max-device-width:414px) {
+		@media screen and(max-width: 375px),screen and(max-width:414px) {
 			width: 90%;
 			margin: 10px auto;
 		}
@@ -535,7 +542,7 @@ header{
 			justify-content: center;
 			width: 80%;
 			margin: 0 auto;
-				@media screen and (max-width: 375px),screen and(max-device-width:414px){
+				@media screen and (max-width: 375px),screen and(max-width:414px){
 					width: 90%;
 					flex-wrap: wrap;
 				}
