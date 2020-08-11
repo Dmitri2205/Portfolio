@@ -1,8 +1,8 @@
-@mixin lobster_text{
-	font-family: 'Lobster', cursive;
+@mixin Jura{
+	font-family: 'Poiret One', cursive;
 	text-shadow:#302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0, 
     #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
 }
 @mixin nunito{
 	font-family: 'Nunito', sans-serif;
@@ -14,7 +14,7 @@
 	font-family: 'Kelly Slab', cursive;
 }
 
-$color: rgba(111,184,64,0.3);
+$color: lighten(#70B840,12%);
 
 
 
@@ -27,7 +27,7 @@ header{
 	width: 100%;
 	margin:0;
 	height: 50px;
-	line-height: 25px;
+	line-height: 50px;
 	background-color: #2A8FFF;
 		nav{
 			display: inline-flex;
@@ -40,7 +40,7 @@ header{
 			font-weight: bold;
 			color: white;
 			font-size: 14px;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			@media screen and (max-width: 375px),screen and(max-width:414px){
 				width: 100%;
 				padding: 0;
@@ -51,7 +51,7 @@ header{
 			transition: 600ms;
 			letter-spacing: 0.025em;
 			margin:0 5px;
-			@include lobster_text;
+			@include Jura;
 				&:hover{
 				 text-shadow:#302745 1px 1px 0, #302745 -1px -1px 0, 
                  #302745 -1px 1px 0, #302745 1px -1px 0;
@@ -69,7 +69,7 @@ header{
 			  color: white;
 			  transition: 600ms;
 			  margin: 0;
-			@include lobster_text;
+			@include Jura;
 			li{
 				margin: 0 5px;
 			}
@@ -170,11 +170,11 @@ header{
 			padding: 0 0 0 20px;
 			font-size: 16px;
 			a{
-				font-size: 18px;
+				font-size: inherit;
 				color:#F67F59;
 				font-weight: bold;
 				text-decoration: none;
-				@include lobster_text;
+				@include Jura;
 				text-shadow: none;
 				&:hover{
 					border-bottom: 2px solid #F67F59;
@@ -231,7 +231,7 @@ header{
 				}	
 				}
 			&-list{
-				@include kelly;
+				@include Jura;
 				display: inline-flex;
 				flex-direction:column;
 				flex-wrap: wrap;
@@ -249,7 +249,7 @@ header{
 					display: inline-block;
 				}
 					li{
-						margin: 5px;
+						margin:0;
 						&:before{
 							content: '•';
 							color: rgb(111,184,64);
@@ -270,10 +270,12 @@ header{
 .portfolio{
 	display: block;
 	width: 100%;
-	background-color: $color;
+	background-color:$color;
 	p{
+		width: 90%;
+		margin:0 auto;
 		@include nunito;
-		text-align: center;
+		text-align: left;
 	}
 	h3{
 		text-transform: uppercase;
@@ -362,8 +364,8 @@ header{
 			box-shadow: 5px 5px #72D3F7;
 			}
 			img[alt="react_logo"]{
-				bottom: 15px;
-				right: 15px;
+				bottom: 10px;
+				right: 10px;
 			}
 		}
 		}
@@ -392,7 +394,7 @@ header{
 				color:#F67F59;
 				font-weight: bold;
 				text-decoration: none;
-				@include lobster_text;
+				@include Jura;
 				text-shadow: none;
 				&:hover{
 					border-bottom: 2px solid #F67F59;}
@@ -409,7 +411,7 @@ header{
 				}
 		&_item{
 			display: block;
-			width: 40%;
+			width: 25%;
 			height: auto;
 			margin: 5px 10px;
 			padding: 0 5px;

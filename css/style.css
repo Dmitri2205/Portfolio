@@ -8,7 +8,7 @@ header {
   width: 100%;
   margin: 0;
   height: 50px;
-  line-height: 25px;
+  line-height: 50px;
   background-color: #2A8FFF; }
   header nav {
     display: -webkit-inline-box;
@@ -29,7 +29,7 @@ header {
     font-weight: bold;
     color: white;
     font-size: 14px;
-    text-transform: uppercase; }
+    text-transform: capitalize; }
     @media screen and (max-width: 375px), screen and (max-width: 414px) {
       header nav {
         width: 100%;
@@ -41,9 +41,9 @@ header {
       transition: 600ms;
       letter-spacing: 0.025em;
       margin: 0 5px;
-      font-family: 'Lobster', cursive;
+      font-family: 'Poiret One', cursive;
       text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-      letter-spacing: 0.15em; }
+      letter-spacing: 0.1em; }
       header nav a:hover {
         text-shadow: #302745 1px 1px 0, #302745 -1px -1px 0,  #302745 -1px 1px 0, #302745 1px -1px 0; }
   @media screen and (max-width: 375px), screen and (max-width: 414px) {
@@ -67,9 +67,9 @@ header {
         -webkit-transition: 600ms;
         transition: 600ms;
         margin: 0;
-        font-family: 'Lobster', cursive;
+        font-family: 'Poiret One', cursive;
         text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-        letter-spacing: 0.15em; }
+        letter-spacing: 0.1em; }
         header ul li {
           margin: 0 5px; } }
 
@@ -173,13 +173,13 @@ header {
       padding: 0 0 0 20px;
       font-size: 16px; }
       .about__wraper_text a {
-        font-size: 18px;
+        font-size: inherit;
         color: #F67F59;
         font-weight: bold;
         text-decoration: none;
-        font-family: 'Lobster', cursive;
+        font-family: 'Poiret One', cursive;
         text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.1em;
         text-shadow: none; }
         .about__wraper_text a:hover {
           border-bottom: 2px solid #F67F59; }
@@ -220,25 +220,24 @@ header {
       width: auto;
       margin: auto; }
       .skills__container_wraper:first-child {
-        border-left: 1px solid rgba(111, 184, 64, 0.3);
-        border-right: 1px solid rgba(111, 184, 64, 0.3);
+        border-left: 1px solid #91cb6a;
+        border-right: 1px solid #91cb6a;
         width: 30%; }
         @media screen and (max-width: 375px), screen and (max-width: 414px) {
           .skills__container_wraper:first-child {
             width: 90%;
-            border: 1px solid rgba(111, 184, 64, 0.3); } }
+            border: 1px solid #91cb6a; } }
       .skills__container_wraper:last-child {
         width: 70%;
-        border-right: 1px solid rgba(111, 184, 64, 0.3); }
+        border-right: 1px solid #91cb6a; }
         @media screen and (max-width: 375px), screen and (max-width: 414px) {
           .skills__container_wraper:last-child {
             width: 90%;
-            border: 1px solid rgba(111, 184, 64, 0.3); } }
+            border: 1px solid #91cb6a; } }
       .skills__container_wraper-list {
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: 'Kelly Slab', cursive;
+        font-family: 'Poiret One', cursive;
+        text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
+        letter-spacing: 0.1em;
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
@@ -263,7 +262,7 @@ header {
             width: 90%;
             display: inline-block; } }
         .skills__container_wraper-list li {
-          margin: 5px; }
+          margin: 0; }
           .skills__container_wraper-list li:before {
             content: '•';
             color: #6fb840;
@@ -277,10 +276,12 @@ header {
 .portfolio {
   display: block;
   width: 100%;
-  background-color: rgba(111, 184, 64, 0.3); }
+  background-color: #91cb6a; }
   .portfolio p {
+    width: 90%;
+    margin: 0 auto;
     font-family: 'Nunito', sans-serif;
-    text-align: center; }
+    text-align: left; }
   .portfolio h3 {
     text-transform: uppercase;
     padding: 50px 0;
@@ -376,8 +377,8 @@ header {
         -webkit-box-shadow: 5px 5px #72D3F7;
                 box-shadow: 5px 5px #72D3F7; }
       .portfolio__reactWraper_item:hover img[alt="react_logo"] {
-        bottom: 15px;
-        right: 15px; }
+        bottom: 10px;
+        right: 10px; }
 
 .courses {
   display: block;
@@ -399,9 +400,9 @@ header {
       color: #F67F59;
       font-weight: bold;
       text-decoration: none;
-      font-family: 'Lobster', cursive;
+      font-family: 'Poiret One', cursive;
       text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.1em;
       text-shadow: none; }
       .courses p a:hover {
         border-bottom: 2px solid #F67F59; }
@@ -423,7 +424,7 @@ header {
         word-wrap: break-word; } }
     .courses__wraper_item {
       display: block;
-      width: 40%;
+      width: 25%;
       height: auto;
       margin: 5px 10px;
       padding: 0 5px;
@@ -499,7 +500,7 @@ header {
       display: block;
       width: 100%;
       font-family: 'Nunito', sans-serif;
-      border: 1px dotted rgba(111, 184, 64, 0.3);
+      border: 1px dotted #91cb6a;
       padding: 0 10px; }
       @media screen and (max-width: 769px) {
         .education__wraper_item {
