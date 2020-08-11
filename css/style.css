@@ -171,7 +171,8 @@ header {
       width: 90%;
       margin: 0 auto;
       padding: 0 0 0 20px;
-      font-size: 16px; }
+      font-size: 16px;
+      text-align: left; }
       .about__wraper_text a {
         font-size: inherit;
         color: #F67F59;

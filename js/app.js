@@ -37,11 +37,11 @@ jQuery(document).ready(function() {
       jQuery('.resume').addClass("hidden").viewportChecker({
         classToAdd: 'visible animate__animated animate__slideInUp',
         classToRemove: 'hidden',
-        offset: 300
+        offset: 200
     });
         jQuery('.contacts').addClass("hidden").viewportChecker({
         classToAdd: 'visible animate__animated animate__slideInUp',
         classToRemove: 'hidden',
-        offset: 100
+        offset: 50
     });
 });
