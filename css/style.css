@@ -39,9 +39,8 @@ header {
       color: white;
       -webkit-transition: 600ms;
       transition: 600ms;
-      letter-spacing: 0.025em;
       margin: 0 5px;
-      font-family: 'Poiret One', cursive;
+      font-family: 'Comfortaa', cursive;
       text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
       letter-spacing: 0.1em; }
       header nav a:hover {
@@ -67,7 +66,7 @@ header {
         -webkit-transition: 600ms;
         transition: 600ms;
         margin: 0;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Comfortaa', cursive;
         text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
         letter-spacing: 0.1em; }
         header ul li {
@@ -178,7 +177,7 @@ header {
         color: #F67F59;
         font-weight: bold;
         text-decoration: none;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Comfortaa', cursive;
         text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
         letter-spacing: 0.1em;
         text-shadow: none; }
@@ -236,7 +235,7 @@ header {
             width: 90%;
             border: 1px solid #91cb6a; } }
       .skills__container_wraper-list {
-        font-family: 'Poiret One', cursive;
+        font-family: 'Comfortaa', cursive;
         text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
         letter-spacing: 0.1em;
         display: -webkit-inline-box;
@@ -299,9 +298,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 90%;
@@ -312,16 +311,16 @@ header {
         display: block; } }
     .portfolio__html_item {
       display: block;
-      width: 25%;
+      width: 300px;
       height: auto;
-      margin: 20px; }
+      margin: 20px auto; }
       @media screen and (max-width: 375px), screen and (max-width: 414px) {
         .portfolio__html_item {
           width: 90%;
           margin: 10px auto; } }
       .portfolio__html_item:hover img {
-        -webkit-transition: 300ms;
-        transition: 300ms;
+        -webkit-transition: left 300ms;
+        transition: left 300ms;
         position: relative;
         top: -5px;
         left: -5px;
@@ -401,7 +400,7 @@ header {
       color: #F67F59;
       font-weight: bold;
       text-decoration: none;
-      font-family: 'Poiret One', cursive;
+      font-family: 'Comfortaa', cursive;
       text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
       letter-spacing: 0.1em;
       text-shadow: none; }

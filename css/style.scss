@@ -1,5 +1,5 @@
-@mixin Jura{
-	font-family: 'Poiret One', cursive;
+@mixin custom_text{
+	font-family: 'Comfortaa', cursive;
 	text-shadow:#302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0, 
     #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
     letter-spacing: 0.1em;
@@ -49,9 +49,8 @@ header{
 			text-decoration: none;
 			color: white;
 			transition: 600ms;
-			letter-spacing: 0.025em;
 			margin:0 5px;
-			@include Jura;
+			@include custom_text;
 				&:hover{
 				 text-shadow:#302745 1px 1px 0, #302745 -1px -1px 0, 
                  #302745 -1px 1px 0, #302745 1px -1px 0;
@@ -69,7 +68,7 @@ header{
 			  color: white;
 			  transition: 600ms;
 			  margin: 0;
-			@include Jura;
+			@include custom_text;
 			li{
 				margin: 0 5px;
 			}
@@ -175,7 +174,7 @@ header{
 				color:#F67F59;
 				font-weight: bold;
 				text-decoration: none;
-				@include Jura;
+				@include custom_text;
 				text-shadow: none;
 				&:hover{
 					border-bottom: 2px solid #F67F59;
@@ -232,7 +231,7 @@ header{
 				}	
 				}
 			&-list{
-				@include Jura;
+				@include custom_text;
 				display: inline-flex;
 				flex-direction:column;
 				flex-wrap: wrap;
@@ -290,7 +289,7 @@ header{
 	&__html{
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 		width: 90%;
 		height: auto;
@@ -301,16 +300,16 @@ header{
 
 	&_item{
 		display: block;
-		width: 25%;
+		width: 300px;
 		height: auto;
-		margin: 20px;
+		margin: 20px auto;
 		@media screen and(max-width: 375px),screen and(max-width:414px) {
 			width: 90%;
 			margin: 10px auto;
 		}
 		&:hover{
 			img{
-			transition: 300ms;
+			transition:left 300ms;
 			position: relative;
 			top: -5px;
 			left: -5px;
@@ -395,7 +394,7 @@ header{
 				color:#F67F59;
 				font-weight: bold;
 				text-decoration: none;
-				@include Jura;
+				@include custom_text;
 				text-shadow: none;
 				&:hover{
 					border-bottom: 2px solid #F67F59;}
