@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Merkur Cyrillic";
+  src: url("../misc/Merkur_Cyrillic.ttf"); }
 body {
   padding: 0;
   margin: 0; }
@@ -7,9 +10,9 @@ header {
   display: block;
   width: 100%;
   margin: 0;
-  height: 50px;
+  height: auto;
   line-height: 50px;
-  background-color: #2A8FFF; }
+  background-color: #364161; }
   header nav {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -25,7 +28,6 @@ header {
         flex-wrap: wrap;
     width: 80%;
     padding: 0 10%;
-    list-style: none;
     font-weight: bold;
     color: white;
     font-size: 14px;
@@ -36,41 +38,15 @@ header {
         padding: 0; } }
     header nav a {
       text-decoration: none;
-      color: white;
+      color: #72D3F7;
       -webkit-transition: 600ms;
       transition: 600ms;
       margin: 0 5px;
-      font-family: 'Comfortaa', cursive;
-      text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-      letter-spacing: 0.1em; }
+      font-size: 20px;
+      letter-spacing: .15em;
+      font-family: "Merkur Cyrillic",sans-serif; }
       header nav a:hover {
-        text-shadow: #302745 1px 1px 0, #302745 -1px -1px 0,  #302745 -1px 1px 0, #302745 1px -1px 0; }
-  @media screen and (max-width: 375px), screen and (max-width: 414px) {
-    header {
-      height: auto; }
-      header ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        width: 95%;
-        color: white;
-        -webkit-transition: 600ms;
-        transition: 600ms;
-        margin: 0;
-        font-family: 'Comfortaa', cursive;
-        text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-        letter-spacing: 0.1em; }
-        header ul li {
-          margin: 0 5px; } }
+        text-shadow: #005EC8 0.5px 0.5px 0, #005EC8 -0.5px -0.5px 0,  #005EC8 -0.5px 0.5px 0, #005EC8 0.5px -0.5px 0; }
 
 .visible {
   opacity: 1; }
@@ -177,9 +153,6 @@ header {
         color: #F67F59;
         font-weight: bold;
         text-decoration: none;
-        font-family: 'Comfortaa', cursive;
-        text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-        letter-spacing: 0.1em;
         text-shadow: none; }
         .about__wraper_text a:hover {
           border-bottom: 2px solid #F67F59; }
@@ -187,7 +160,8 @@ header {
 .skills {
   display: block;
   width: 90%;
-  margin: 50px auto; }
+  padding: 50px 5%;
+  background-color: #e6e6e6; }
   .skills h2 {
     text-align: center;
     text-transform: uppercase;
@@ -220,24 +194,22 @@ header {
       width: auto;
       margin: auto; }
       .skills__container_wraper:first-child {
-        border-left: 1px solid #91cb6a;
-        border-right: 1px solid #91cb6a;
+        border-left: 1px solid #72D3F7;
+        border-right: 1px solid #72D3F7;
         width: 30%; }
         @media screen and (max-width: 375px), screen and (max-width: 414px) {
           .skills__container_wraper:first-child {
             width: 90%;
-            border: 1px solid #91cb6a; } }
+            border: 1px solid #72D3F7; } }
       .skills__container_wraper:last-child {
         width: 70%;
-        border-right: 1px solid #91cb6a; }
+        border-right: 1px solid #72D3F7; }
         @media screen and (max-width: 375px), screen and (max-width: 414px) {
           .skills__container_wraper:last-child {
             width: 90%;
-            border: 1px solid #91cb6a; } }
+            border: 1px solid #72D3F7; } }
       .skills__container_wraper-list {
-        font-family: 'Comfortaa', cursive;
-        text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-        letter-spacing: 0.1em;
+        font-family: 'Jost', cursive;
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
@@ -265,7 +237,7 @@ header {
           margin: 0; }
           .skills__container_wraper-list li:before {
             content: '•';
-            color: #6fb840;
+            color: #72D3F7;
             margin-right: 5px; }
         .skills__container_wraper-list img[alt="react_logo"] {
           display: inline-block;
@@ -276,18 +248,20 @@ header {
 .portfolio {
   display: block;
   width: 100%;
-  background-color: #91cb6a; }
+  background-color: #364161; }
   .portfolio p {
     width: 90%;
     margin: 0 auto;
     font-family: 'Nunito', sans-serif;
-    text-align: left; }
+    text-align: left;
+    color: white; }
   .portfolio h3 {
     text-transform: uppercase;
     padding: 50px 0;
     font-size: 30px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    color: white;
     font-weight: bold;
     margin: 0; }
   .portfolio__html {
@@ -343,7 +317,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     padding-bottom: 20px; }
     @media screen and (max-width: 375px), screen and (max-width: 414px) {
       .portfolio__reactWraper {
@@ -382,9 +356,10 @@ header {
 
 .courses {
   display: block;
-  width: 90%;
+  width: 100%;
   padding: 50px 0;
-  margin: 0 auto; }
+  margin: 0;
+  background-color: #e6e6e6; }
   .courses h2 {
     font-family: 'Nunito', sans-serif;
     text-align: center;
@@ -400,9 +375,7 @@ header {
       color: #F67F59;
       font-weight: bold;
       text-decoration: none;
-      font-family: 'Comfortaa', cursive;
-      text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-      letter-spacing: 0.1em;
+      font-family: 'Jost', cursive;
       text-shadow: none; }
       .courses p a:hover {
         border-bottom: 2px solid #F67F59; }
@@ -500,7 +473,7 @@ header {
       display: block;
       width: 100%;
       font-family: 'Nunito', sans-serif;
-      border: 1px dotted #91cb6a;
+      border: 1px dotted #72D3F7;
       padding: 0 10px; }
       @media screen and (max-width: 769px) {
         .education__wraper_item {

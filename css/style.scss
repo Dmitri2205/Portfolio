@@ -1,8 +1,15 @@
+@font-face{
+	font-family: "Merkur Cyrillic";
+	src: url('../misc/Merkur_Cyrillic.ttf');
+}
+
+
+
 @mixin custom_text{
-	font-family: 'Comfortaa', cursive;
-	text-shadow:#302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0, 
-    #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-    letter-spacing: 0.1em;
+	font-family: 'Jost', cursive;
+	// text-shadow:#302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0, 
+ //    #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
+ //    letter-spacing: 0.1em;
 }
 @mixin nunito{
 	font-family: 'Nunito', sans-serif;
@@ -14,29 +21,29 @@
 	font-family: 'Kelly Slab', cursive;
 }
 
-$color: lighten(#70B840,12%);
-
+$color: #72D3F7;
 
 
 body{
 	padding: 0;
 	margin: 0;
 }
+
+
 header{
 	display: block;
 	width: 100%;
 	margin:0;
-	height: 50px;
+	height:auto;
 	line-height: 50px;
-	background-color: #2A8FFF;
+	background-color: #364161;
 		nav{
 			display: inline-flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content:space-between;
 			flex-wrap: wrap;
 			width: 80%;
 			padding: 0 10%;
-			list-style: none;
 			font-weight: bold;
 			color: white;
 			font-size: 14px;
@@ -47,31 +54,16 @@ header{
 			}
 			a{
 			text-decoration: none;
-			color: white;
+			color: $color;
 			transition: 600ms;
 			margin:0 5px;
-			@include custom_text;
+			font-size: 20px;
+			letter-spacing: .15em;
+			font-family: "Merkur Cyrillic",sans-serif;
 				&:hover{
-				 text-shadow:#302745 1px 1px 0, #302745 -1px -1px 0, 
-                 #302745 -1px 1px 0, #302745 1px -1px 0;
+				 text-shadow:#005EC8 0.5px 0.5px 0, #005EC8 -0.5px -0.5px 0, 
+                 #005EC8 -0.5px 0.5px 0, #005EC8 0.5px -0.5px 0;
 				}
-			}
-		}
-		@media screen and (max-width:375px),screen and(max-width:414px) {
-			height: auto;
-			ul{
-			  display: flex;
-			  flex-direction: row;
-			  justify-content: flex-start;
-			  flex-wrap: wrap ;
-			  width: 95%;
-			  color: white;
-			  transition: 600ms;
-			  margin: 0;
-			@include custom_text;
-			li{
-				margin: 0 5px;
-			}
 			}
 		}
 }
@@ -174,7 +166,6 @@ header{
 				color:#F67F59;
 				font-weight: bold;
 				text-decoration: none;
-				@include custom_text;
 				text-shadow: none;
 				&:hover{
 					border-bottom: 2px solid #F67F59;
@@ -186,7 +177,8 @@ header{
 	.skills{
 		display: block;
 		width: 90%;
-		margin: 50px auto;
+		padding: 50px 5%;
+		background-color: darken(white, 10%);
 		h2{
 			text-align: center;
 			text-transform: uppercase;
@@ -252,7 +244,7 @@ header{
 						margin:0;
 						&:before{
 							content: '•';
-							color: rgb(111,184,64);
+							color:$color;
 							margin-right:5px;
 						}
 					}
@@ -270,12 +262,13 @@ header{
 .portfolio{
 	display: block;
 	width: 100%;
-	background-color:$color;
+	background-color:#364161;
 	p{
 		width: 90%;
 		margin:0 auto;
 		@include nunito;
 		text-align: left;
+		color: white;
 	}
 	h3{
 		text-transform: uppercase;
@@ -283,6 +276,7 @@ header{
 		font-size: 30px;
 		text-align: center;
 		@include nunito;
+		color: white;
 		font-weight:bold;
 		margin:0;
 	}
@@ -313,7 +307,7 @@ header{
 			position: relative;
 			top: -5px;
 			left: -5px;
-			box-shadow: 5px 5px #72D3F7;
+			box-shadow: 5px 5px $color;
 			}
 		}
 		img{
@@ -328,7 +322,7 @@ header{
 		flex-direction: row;
 		justify-content: center;
 		width: 90%;
-		margin: 20px auto;
+		margin: 20px auto 0 auto;
 		padding-bottom: 20px;
 		@media screen and(max-width: 375px),screen and(max-width:414px) {
 		 display: block;
@@ -375,9 +369,10 @@ header{
 
 .courses{
 	display: block;
-	width: 90%;
+	width: 100%;
 	padding:50px 0;
-	margin: 0 auto;
+	margin: 0;
+	background-color: darken(white, 10%);
 	h2{
 		@include nunito;
 		text-align: center;
