@@ -50,7 +50,9 @@ header{
 			color: white;
 			transition: 600ms;
 			margin:0 5px;
-			@include custom_text;
+			font-family: 'Russo One', sans-serif;
+			font-size: 18px;
+				 text-shadow:#302745 0.5px 0.5px 0, #302745 -0.5px -0.5px 0; 
 				&:hover{
 				 text-shadow:#302745 1px 1px 0, #302745 -1px -1px 0, 
                  #302745 -1px 1px 0, #302745 1px -1px 0;

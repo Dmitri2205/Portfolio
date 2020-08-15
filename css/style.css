@@ -40,9 +40,9 @@ header {
       -webkit-transition: 600ms;
       transition: 600ms;
       margin: 0 5px;
-      font-family: 'Comfortaa', cursive;
-      text-shadow: #302745 0.015em 0.015em 0, #302745 -0.015em -0.015em 0,  #302745 -0.015em 0.015em 0, #302745 0.015em -0.015em 0;
-      letter-spacing: 0.1em; }
+      font-family: 'Russo One', sans-serif;
+      font-size: 18px;
+      text-shadow: #302745 0.5px 0.5px 0, #302745 -0.5px -0.5px 0; }
       header nav a:hover {
         text-shadow: #302745 1px 1px 0, #302745 -1px -1px 0,  #302745 -1px 1px 0, #302745 1px -1px 0; }
   @media screen and (max-width: 375px), screen and (max-width: 414px) {
