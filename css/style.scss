@@ -29,6 +29,9 @@ header{
 	height: 50px;
 	line-height: 50px;
 	background-color: #2A8FFF;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
 		nav{
 			display: inline-flex;
 			flex-direction: row;
@@ -39,7 +42,6 @@ header{
 			list-style: none;
 			font-weight: bold;
 			color: white;
-			font-size: 14px;
 			text-transform: capitalize;
 			@media screen and (max-width: 375px),screen and(max-width:414px){
 				width: 100%;
@@ -51,7 +53,7 @@ header{
 			transition: 600ms;
 			margin:0 5px;
 			font-family: 'Russo One', sans-serif;
-			font-size: 18px;
+			font-size: 1rem;
 				 text-shadow:#302745 0.5px 0.5px 0, #302745 -0.5px -0.5px 0; 
 				&:hover{
 				 text-shadow:#302745 1px 1px 0, #302745 -1px -1px 0, 
@@ -94,7 +96,7 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 80%;
+	width: 80.5%;
 	margin: 0 auto;
 	@include nunito;
 	&__item{
@@ -114,14 +116,14 @@ header{
 		@include nunito;
 		text-align: center;
 		text-transform: uppercase;
-		padding: 30px 0;
+		padding: 20px 0 30px 0;
 		margin: 0;
 	}
 
 		&__wraper{
 			display: flex;flex-direction: row;
 			justify-content: center;
-			width:80%;
+			width:79%;
 			margin:0 auto;
 			padding: 20px 0;
 			@include nunito;	
@@ -171,6 +173,7 @@ header{
 			padding: 0 0 0 20px;
 			font-size: 16px;
 			text-align: left;
+			p{margin: 0;}
 			a{
 				font-size: inherit;
 				color:#F67F59;
@@ -187,7 +190,7 @@ header{
 	}
 	.skills{
 		display: block;
-		width: 90%;
+		width: 78%;
 		margin: 50px auto;
 		h2{
 			text-align: center;
@@ -219,7 +222,7 @@ header{
 				border-left: 1px solid $color;
 				border-right: 1px solid $color;
 				width:30%;
-				@media screen and (max-width: 375px),screen and(max-width:414px){
+				@media screen and (min-width: 320px) and (max-width: 770px) {
 					width:90%;
 					border:1px solid $color;
 				}
@@ -227,7 +230,7 @@ header{
 				&:last-child{
 				width:70%;
 				border-right: 1px solid $color;
-				@media screen and (max-width: 375px),screen and(max-width:414px){
+				@media screen and (min-width: 320px) and (max-width:770px){
 					width:90%;
 					border:1px solid $color;
 				}	
@@ -246,9 +249,10 @@ header{
 				text-transform: none;
 				color:#302745;
 				box-sizing: border-box;
-				@media screen and (max-width: 375px),screen and(max-width:414px){
+				@media screen and (max-width: 375px) and(max-width:414px){
 					width: 90%;
 					display: inline-block;
+					height: auto;
 				}
 					li{
 						margin:0;
@@ -277,7 +281,7 @@ header{
 		width: 90%;
 		margin:0 auto;
 		@include nunito;
-		text-align: left;
+		text-align: center;
 	}
 	h3{
 		text-transform: uppercase;
@@ -287,6 +291,9 @@ header{
 		@include nunito;
 		font-weight:bold;
 		margin:0;
+		&:nth-child(5){
+			padding: 5px 0;
+		}
 	}
 	&__html{
 		display: flex;
@@ -300,50 +307,92 @@ header{
 			display: block;
 		}
 
-	&_item{
-		display: block;
-		width: 300px;
-		height: auto;
-		margin: 20px auto;
-		@media screen and(max-width: 375px),screen and(max-width:414px) {
-			width: 90%;
-			margin: 10px auto;
-		}
-		&:hover{
+		&_item{
+			display: block;
+			width: 24%;
+			height: auto;
+			margin: 5px;
+			@media screen and(min-width: 320px) and (max-width:414px) {
+				width: 90%;
+				margin: 10px auto;
+			}
+			@media screen and (max-width: 800px) {
+				width: 48.5%;
+			}
+			&:hover{
+				img{
+				transition: 300ms;
+				box-shadow: 5px 5px #72D3F7;
+				animation:item_animation .3s ease;
+				animation-fill-mode: forwards;
+				}
+			}
 			img{
-			transition:left 300ms;
-			position: relative;
-			top: -5px;
-			left: -5px;
-			box-shadow: 5px 5px #72D3F7;
+				transition: 300ms;
+				width: 100%;
+				height: 100%;
+				animation: return .3s ease;
 			}
 		}
-		img{
-			transition: 300ms;
-			width: 100%;
-			height: 100%;
+		@keyframes item_animation {
+			0%{
+				top: 0;
+				left: 0;
+			}
+			100%{
+				position: relative;
+				top: -5px;
+				left: -5px;
+			}
 		}
-	}
+		@keyframes return {
+			0%{
+				position: relative;
+				top: -5px;
+				left: -5px;	
+			}
+			100%{
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 	&__reactWraper{
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: flex-start;
 		width: 90%;
 		margin: 20px auto;
 		padding-bottom: 20px;
+		flex-wrap: wrap;
 		@media screen and(max-width: 375px),screen and(max-width:414px) {
 		 display: block;
 		}
 		&_item{
 		display: block;
-		width: 25%;
+		width: 24%;
 		height: auto;
-		margin: 20px;
+		margin: 5px;
 		position: relative;
 		@media screen and(max-width: 375px),screen and(max-width:414px) {
 			width: 90%;
 			margin: 10px auto;
+		}
+		&:last-child{
+			filter: grayscale(80%);
+					&:after{
+					content: 'Проект дорабатывается...Но вы можете оценить код';
+					font-size: 18px;
+					color: black;
+					font-weight: bold;
+					position: absolute;
+					top: 45%;
+					left: 30%;
+					opacity: 0;
+					transition: opacity .5s;
+					text-shadow: cyan .3px .3px 0, cyan -.3px -.3px 0, 
+                 				 cyan -.3px .3px 0, cyan .3px -.3px 0
+				}
 		}
 		img[alt="react_logo"]{
 			display: inline-block;
@@ -353,23 +402,48 @@ header{
 			bottom: 5px;
 			right: 5px;
 		}
+		img[alt="gears"]{
+			display: inline-block;
+			max-width: 60px;
+			max-height: 50px;
+			position: absolute;
+			bottom: 5px;
+			left: 5px;
+			z-index: 9999;
+
+		}
 		img{
 			width: 100%;
 			height: 100%;
+			animation: return .3s ease;
 		}
 			&:hover{
-			img[alt="react_thumb"]{
-			transition: 600ms;
-			position: relative;
-			top: -5px;
-			left: -5px;
-			box-shadow: 5px 5px #72D3F7;
+				img{
+					animation: item_animation .3s ease;
+					animation-fill-mode: forwards;
+					box-shadow: 5px 5px #72D3F7;
+				}
+				img[alt="gears"]{
+				animation: item_animation .3s ease;
+					animation-fill-mode: forwards;
+				}
+				&:last-child:after{
+					top: 42%;
+					left: 23%;
+					animation: working_text .5s ease;
+					animation-delay: .2s;
+					animation-fill-mode: forwards;
+					transition: opacity 1s;
+				}
+				@keyframes working_text {
+					0%{
+						opacity: 0;
+					}100%{
+						display: inline;
+						opacity: 1;
+					}
+				}
 			}
-			img[alt="react_logo"]{
-				bottom: 10px;
-				right: 10px;
-			}
-		}
 		}
 	}
 }
@@ -435,6 +509,7 @@ header{
 				font-size: 14px;
 				text-align: left;
 				font-weight: bold;
+				word-break:break-word;
 			}
 			&:hover{
 				transition: 600ms;
