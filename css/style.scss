@@ -26,7 +26,7 @@ header{
 	display: block;
 	width: 100%;
 	margin:0;
-	height: 50px;
+	height: auto;
 	line-height: 50px;
 	background-color: #2A8FFF;
 	position: sticky;
@@ -145,7 +145,7 @@ header{
 			border-radius: 10px;
 			background: url( ../img/myPhoto.jpg) center no-repeat;
 			background-size: cover;
-			background-position: -100px 0;
+			background-position:70% 0;
 			overflow: hidden;
 			position: relative;
 				@media screen and (max-width:375px),screen and(max-width:414px) {
@@ -249,7 +249,7 @@ header{
 				text-transform: none;
 				color:#302745;
 				box-sizing: border-box;
-				@media screen and (max-width: 375px) and(max-width:414px){
+				@media screen and (min-width: 320px) and(max-width:780px){
 					width: 90%;
 					display: inline-block;
 					height: auto;
@@ -312,12 +312,9 @@ header{
 			width: 24%;
 			height: auto;
 			margin: 5px;
-			@media screen and(min-width: 320px) and (max-width:414px) {
+			@media screen and(min-width: 320px) and (max-width:500px) {
 				width: 90%;
 				margin: 10px auto;
-			}
-			@media screen and (max-width: 800px) {
-				width: 48.5%;
 			}
 			&:hover{
 				img{
@@ -365,7 +362,7 @@ header{
 		margin: 20px auto;
 		padding-bottom: 20px;
 		flex-wrap: wrap;
-		@media screen and(max-width: 375px),screen and(max-width:414px) {
+		@media screen and(min-width: 320px) and (max-width:780px) {
 		 display: block;
 		}
 		&_item{
@@ -374,7 +371,7 @@ header{
 		height: auto;
 		margin: 5px;
 		position: relative;
-		@media screen and(max-width: 375px),screen and(max-width:414px) {
+		@media screen and(min-width: 320px) and(max-width:780px) {
 			width: 90%;
 			margin: 10px auto;
 		}

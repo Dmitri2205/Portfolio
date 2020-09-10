@@ -7,7 +7,7 @@ header {
   display: block;
   width: 100%;
   margin: 0;
-  height: 50px;
+  height: auto;
   line-height: 50px;
   background-color: #2A8FFF;
   position: -webkit-sticky;
@@ -150,7 +150,7 @@ header {
       border-radius: 10px;
       background: url(../img/myPhoto.jpg) center no-repeat;
       background-size: cover;
-      background-position: -100px 0;
+      background-position: 70% 0;
       overflow: hidden;
       position: relative; }
       @media screen and (max-width: 375px), screen and (max-width: 414px) {
@@ -262,7 +262,7 @@ header {
         color: #302745;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box; }
-        @media screen and (max-width: 375px) and (max-width: 414px) {
+        @media screen and (min-width: 320px) and (max-width: 780px) {
           .skills__container_wraper-list {
             width: 90%;
             display: inline-block;
@@ -322,13 +322,10 @@ header {
       width: 24%;
       height: auto;
       margin: 5px; }
-      @media screen and (min-width: 320px) and (max-width: 414px) {
+      @media screen and (min-width: 320px) and (max-width: 500px) {
         .portfolio__html_item {
           width: 90%;
           margin: 10px auto; } }
-      @media screen and (max-width: 800px) {
-        .portfolio__html_item {
-          width: 48.5%; } }
       .portfolio__html_item:hover img {
         -webkit-transition: 300ms;
         transition: 300ms;
@@ -393,7 +390,7 @@ header {
     padding-bottom: 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    @media screen and (max-width: 375px), screen and (max-width: 414px) {
+    @media screen and (min-width: 320px) and (max-width: 780px) {
       .portfolio__reactWraper {
         display: block; } }
     .portfolio__reactWraper_item {
@@ -402,7 +399,7 @@ header {
       height: auto;
       margin: 5px;
       position: relative; }
-      @media screen and (max-width: 375px), screen and (max-width: 414px) {
+      @media screen and (min-width: 320px) and (max-width: 780px) {
         .portfolio__reactWraper_item {
           width: 90%;
           margin: 10px auto; } }
