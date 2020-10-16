@@ -1,45 +1,40 @@
 jQuery(document).ready(function() {
     jQuery('.goals').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInLeft',
+        classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
-        offset: 200
+        offset: 0
     });
 
     jQuery('.about').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInLeft',
+        classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
-        offset: 300
+        offset: 0
     });
 
     jQuery('.skills').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInLeft',
+        classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
-        offset: 300
+        offset: 0
     });
 
     jQuery('.portfolio').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInLeft',
+        classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
-        offset: 300
+        offset: 0
     });
 
     jQuery('.courses').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInLeft',
+        classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
-        offset: 300
+        offset: 0
     });
 
     jQuery('.education').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInLeft',
+        classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
-        offset: 300
+        offset: 0
     });
       jQuery('.resume').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__slideInUp',
-        classToRemove: 'hidden',
-        offset: 200
-    });
-        jQuery('.contacts').addClass("hidden").viewportChecker({
         classToAdd: 'visible animate__animated animate__slideInUp',
         classToRemove: 'hidden',
         offset: 50

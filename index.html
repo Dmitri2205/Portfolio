@@ -21,43 +21,50 @@
 
 <body>
     <header class="header " >
+    	<div onclick="menuButton()" class="header__mobileMenu"><span></span></div>
             <nav class="Menu">
-            <a href="#about">обо мне</a>
+            <a href="#welcome">обо мне</a>
             <a href="#skills">навыки</a>
             <a href="#portfolio">портфолио</a>
             <a href="#courses">курсы</a>
             <a href="#education">образование</a>
             <a href="#resume">резюме</a>           
-            <a href="#contacts">контакты</a>
             </nav>
+        <div class="contacts__wraper">
+            <a class="contacts__wraper_item" href="https://github.com/Dmitri2205"><i class="fab fa-github"></i></a>
+            <a class="contacts__wraper_item" href="https://vk.com/baranov__dmitry_sergeevich"><i class="fab fa-vk"></i></a>
+            <a class="contacts__wraper_item" href="https://t.me/Baranov_Dmitry"><i class="fab fa-telegram"></i></a>
+            <a class="contacts__wraper_item" href="https://wa.me/qr/VHES5R3A5VDEL1"><i class="fab fa-whatsapp"></i></a>
+            <a class="contacts__wraper_item" href="tel:89911006160"><i class="fas fa-mobile-alt"></i></a>
+            <a class="contacts__wraper_item" href="mailto:dimch2205@gmail.com"> <i class="fas fa-at"></i></a>
+        </div>
     </header>
-    <section class="goals " >
-        <div class="goals__item">
-            <h3>Цели</h3>
-            <p>Расчитываю повысить свой грейд до <span>middle</span>, либо <span>fullstack</span>, в направлении мобильной или десктопной разработки.Считаю,что будущее за гаджетами и современными технологиями.</p>
-        </div>
-        <div class="goals__item">
-            <h3>Хобби</h3>
-            <p>Интересуюсь электроникой,ремонтирую ПК/Ноутбуки/моноблоки на программном и компонентном уровне,прошиваю игровые консоли и смартфоны.Давно и достаточно хорошо дружу с паяльниками и мультитестерами.Гитарист-самоучка с 2008 года.Сноуборд и экстремальные виды спорта с 2006 года.</p>
-        </div>
-    </section>
-    <section id="about" class="about ">
-        <h2 >Обо мне</h2>
-        <div  class="about__wraper">
-            <div class="about__wraper_myPhoto"><img class="JFD" src="https://smartprogress.do/uploadImages/000809397_l_crop.jpg" alt="JFD"></div>
-            <div class="about__wraper_text">
-                <p >По образованию инженер автосервиса.Имею два диплома профессионального образования,повышение квалификации и неоконченое высшее образование по направлению "Автомобильное хозяйство и автосервис"(МАДИ).
+    <section id="welcome" class="welcome">
+        <h2 >Добро пожаловать</h2>
+        <div  class="welcome__wraper">
+            <div class="welcome__wraper_myPhoto"></div>
+            <div class="welcome__wraper_text">
+                <p> Давайте познакомимся. Меня зовут Дмитрий, я начинающий junior frontend разработчик.   
+                	Имею способность быстро осваивать новые технологии которые необходимы для решения поставленных задач и компенсировать пробелы в знаниях упорством и трудом.
+                    Умею работать в команде, люблю изучать новые технологии, легко нахожу общий язык с людьми.
+                	По образованию инженер автосервиса.Имею два диплома профессионального образования,повышение квалификации и неоконченое высшее образование по направлению "Автомобильное хозяйство и автосервис"(МАДИ).
                     <br>
-                    Профессия автомеханика, со временем, перестала приносить удовлетворение и я решил поменять профиль.Мне всегда было интересно программирование и электроника,поэтому было решено выбрать направление Frontend разработки.
-                    <br>
-                    Первое время я изучал основы и базу самостоятельно.Изучая web-разработку с января 2019 года начинал с вёрстки писем и простых лэндингов,далее приступил к изучению JavaScript и различных фрэймворков и библиотек,но потом понял,что мне нужно больше информации и наставничество по более углублённым темам,и я решил закончить курсы от Mail.ru Group на портале <a href="https://geekbrains.ru/users/3809871">Geekbrains.ru</a>.
-                    <br>
-                    <br>
-                    Больше всего люблю верстать и стилизовать элементы,но если стоит интересная задача, для которой нужно использовать JS,то ухожу в работу с головой.С лёгкостью читаю документацию,тексты и блоги на английском.
+                    Самостоятельно изучая web-разработку с января 2019 года начинал с вёрстки писем и простых лэндингов,далее приступил к изучению JavaScript и различных фрэймворков и библиотек.
+                    Окончил курсы от Mail.ru Group на портале <a href="https://geekbrains.ru/users/3809871">Geekbrains.ru</a>.Успешно защитил проект выпускной практики, на котором освоил React.JS и немного познакомился с backend частью и различными инструментами разработки.
                     <br>
                 </p>
             </div>
         </div>
+    <div class="goals " >
+        <div class="goals__item">
+            <h3>Цели</h3>
+            <p>Расчитываю повысить свой грейд до <span>middle</span>, либо <span>fullstack</span>, в направлении мобильной или десктопной разработки.Обожаю всё,что можно прошить или запрограммировать.</p>
+        </div>
+        <div class="goals__item">
+            <h3>Хобби</h3>
+            <p>Интересуюсь электроникой,ремонтирую ПК/Ноутбуки/моноблоки на программном и компонентном уровне,прошиваю игровые консоли и смартфоны.Давно и достаточно хорошо дружу с паяльниками и мультитестерами.Играю на гитаре,катаюсь на сноуборде.</p>
+        </div>
+    </div>
     </section>
     <section class="skills ">
         <h2 id="skills">навыки</h2>
@@ -68,7 +75,6 @@
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>LESS/SCSS</li>
-                    <li>Flexbox</li>
                     <li>Bootstrap 4</li>
                     <li>БЭМ</li>
                     <li>Кросбраузерная/адаптивная/
@@ -83,17 +89,11 @@
                 <h3>Дополнительные навыки и опыт использования инструментов:</h3>
                 <ul class="skills__container_wraper-list">
                     <li>Webpack 4</li>
-                    <li>Webpack dev-server</li>
-                    <li>Webpack CLI</li>
                     <li>Node Package Manager</li>
                     <li>Postman</li>
                     <li>Open Server</li>
-                    <li>React Router</li>
-                    <li>React Redux</li>
-                    <li>PropTypes</li>
-                    <li>react-yandex-map</li>
+                    <li>react-yandex-maps</li>
                     <li>Yandex Maps JS API</li>
-                    <li>Vue + VueX</li>
                     <li>Lighthouse</li>
                     <li>XHR</li>
                     <li>Fetch</li>
@@ -168,69 +168,16 @@
         <h2 id="courses">курсы</h2>
         <p>Окончил программу Frontend разработки,успешно сдав проект.Ниже вы можете ознакомиться с полученными мной сертификатами о прохождении курсов.</p>
         <div class="courses__wraper">
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/623520">
-                    Основы HTML/CSS
-                </a>
-                <p>Успешно изучил основы HTML/CSS <br> с максимальным колличеством балов.</p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/627404">Основы программирования</a>
-                <p>Основы и введение в прграммирование.
-                    Алгоритмы,циклы,массивы,переменные,функции.
-                </p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/647110">Основы баз данных</a>
-                <p>Основы MySQL.
-                    <br>
-                    Запросы,join,foreign keys,etc.</p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/655048">Git. Быстрый старт</a>
-                <p>Основы работы с Git.
-                    Push,Pull,Commit,Conflict,etc.
-                </p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/659211">HTML5 и CSS3</a>
-                <p>Стандарты HTML5/CSS3
-                    Flexbox,Grid,Animate.css,
-                    W3C,responsive,CSS Frameworks,LESS,CDN.
-                </p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/661206">Веб-разработка.Быстрый старт</a>
-                <p>Основы PHP,Open Server,Deploy сайтов</p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/680829">JavaScript.Уровень 1</a>
-                <p>Основы языка,операторы,циклы,массивы,
-                    объекты,введение в DOM,события.
-                </p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/700774">JavaScript.Уровень 2</a>
-                <p>ООП,асинхронные запросы,регулярные выражения,
-                    основы Vue.js,сборка.
-                </p>
-            </div>
-            <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/go/ZHn~Rg">React.JS</a>
-                <p>Основы React,жизненные циклы,Material UI,
-                    роутинг,Redux,middlewares/actions,API,<br>
-                    Progressive Web App.
-                </p>
-            </div>
-             <div class="courses__wraper_item">
-                <a href="https://geekbrains.ru/certificates/875314">Стажировка в GeekBrains</a>
-                <p>
-                    В процессе стажировки разрабатывал
-                    <br>    
-                     PWA-приложение. 
-                    Ссылку на приложение вы можете найти в портфолио.
-                </p>
-            </div>
+            <div class="courses__wraper_item"><img src="misc/certs/1.png" alt="cert1"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/2.png" alt="cert2"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/3.png" alt="cert3"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/4.png" alt="cert4"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/5.png" alt="cert5"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/6.png" alt="cert6"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/7.png" alt="cert7"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/8.png" alt="cert8"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/9.png" alt="cert9"></div>
+            <div class="courses__wraper_item"><img src="misc/certs/10.png" alt="cert10"></div>
         </div>
     </section>
     <section class="education " id="education">
@@ -267,23 +214,10 @@
             </div>
         </div>
     </section>
-    <section class="resume " id="resume">
+    <footer class="resume " id="resume">
         <h2>резюме</h2>
         <p>Вы можете скачать моё резюме по ссылке ниже.Резюме аналогично оригиналу на <a href="https://hh.ru/resume/66ce92e5ff0714b1890039ed1f4e3377495467">HH.ru</a></p>
         <a class="resume__downloadLink" href="misc/BaranovDS.pdf" download>скачать</a>
-    </section>
-    <footer class="contacts " id="contacts">
-        <h3>контакты</h3>
-        <p>Вы можете связаться со мной в социальных сетях,написать мне на почту или позвонить.</p>
-        <div class="contacts__wraper">
-            <div class="contacts__wraper_item">
-            <a href="https://www.facebook.com/profile.php?id=100053213349217"><i class="fab fa-facebook-square"></i></a></div>
-            <div class="contacts__wraper_item"><a href="https://vk.com/baranov__dmitry_sergeevich"><i class="fab fa-vk"></i></a></div>
-            <div class="contacts__wraper_item"><a href="https://t.me/Baranov_Dmitry"><i class="fab fa-telegram"></i></a></div>
-            <div class="contacts__wraper_item"> <a href="https://wa.me/qr/VHES5R3A5VDEL1"><i class="fab fa-whatsapp"></i></a></div>
-            <div class="contacts__wraper_item"> <a href="tel:89911006160"><i class="fas fa-mobile-alt"></i></a></div>
-            <div class="contacts__wraper_item"> <a href="mailto:dimch2205@gmail.com"> <i class="fas fa-at"></i></a></div>
-        </div>
     </footer>
     <script>
     const anchors = document.querySelectorAll('a[href*="#"]')
@@ -306,6 +240,7 @@
     <script defer src="js/jquery-3.2.1.min.js"></script>
     <script defer src="js/jquery.viewportchecker.min.js"></script>
     <script defer src="js/app.js"></script>
+    <script defer src="js/mobileMenu.js"></script>
 </body>
 
 </html>
