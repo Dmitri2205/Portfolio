@@ -236,32 +236,6 @@ body {
 	    }
 	}
 
-.goals {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 80%;
-	margin: 0 auto;
-	padding-bottom: 10px;
-    @media screen and (max-width: 375px), screen and(max-width:414px) {
-        display: block;
-        width: 90%;
-    }
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    @include nunito;
-
-    &__item {
-        margin: 10px;
-
-        span {
-            @include kelly;
-            color: darken($firstColor,10%);
-        }
-    }
-}
 
 .welcome {
     display: block;
@@ -274,6 +248,8 @@ body {
         text-transform: uppercase;
         padding: 20px 0 30px 0;
         margin: 0;
+        position: relative;
+		z-index: 1;
     }
 
     &__wraper {
@@ -283,9 +259,10 @@ body {
         width: 79%;
         margin: 0 auto;
         padding: 20px 0;
+        position: relative;
+		z-index: 1;
         @include nunito;
-
-        @media screen and (max-width: 375px), screen and(max-width:414px) {
+        @media screen and(max-width:478px) {
             display: block;
             width: 100%;
             text-align: center;
@@ -322,7 +299,7 @@ body {
             width: 90%;
             margin: 0 auto;
             padding: 0 0 0 20px;
-            font-size: 16px;
+            font-size: 18px;
             text-align: left;
 
             p {
@@ -336,32 +313,71 @@ body {
                 text-decoration: none;
                 @include custom_text;
                 text-shadow: none;
-
                 &:hover {
                     border-bottom: 2px solid #F67F59;
                 }
             }
         }
     }
+.goals {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+    @media screen and(max-width:478px) {
+        display: block;
+        width: 90%;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    @include nunito;
+
+    &__item {
+        margin: 10px;
+
+        span {
+            @include kelly;
+            color: darken($firstColor,10%);
+        }
+    }
+}
+iframe{
+    	width: 100%;
+    	position: absolute;
+    	bottom: -25%;
+    	left: 0;
+    	z-index: 0;
+    	@media screen and (max-width: 478px) {
+    		bottom: -5%;
+    		height: 5.3%;
+    	}
+    }
 }
 
 .skills {
     display: block;
-    width: 78%;
-    margin: 50px auto;
+    width: 100%;
+    margin:0 auto 50px auto;
     color: $secondColor;
     h2 {
         text-align: center;
         text-transform: uppercase;
         @include nunito;
         font-size: 30px;
+        margin-top: 0;
+        padding-top: 50px;
     }
 
     &__container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
 
         @media screen and (max-width: 768px) {
             display: block;
@@ -700,6 +716,13 @@ body {
             }
         }
     }
+    iframe{
+    	width: 100%;
+    	position:absolute;
+    	bottom: -8%;
+    	left: 0; 
+    	z-index: 0;
+    }
 }
 
 
@@ -707,16 +730,20 @@ body {
 .education {
     display: block;
     width: 100%;
-    margin: 50px auto;
+    margin:0 auto 50px auto;
     color: $secondColor;
+    position: relative;
     h2 {
         @include nunito;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
+        margin-top: 0;
+        padding-top: 50px;
+        position: relative;
+        z-index: 1
     }
-
     &__wraper {
         display: flex;
         flex-direction: row;

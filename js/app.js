@@ -1,16 +1,4 @@
 jQuery(document).ready(function() {
-    jQuery('.goals').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInUp',
-        classToRemove: 'hidden',
-        offset: 0
-    });
-
-    jQuery('.about').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animate__animated animate__fadeInUp',
-        classToRemove: 'hidden',
-        offset: 0
-    });
-
     jQuery('.skills').addClass("hidden").viewportChecker({
         classToAdd: 'visible animate__animated animate__fadeInUp',
         classToRemove: 'hidden',
